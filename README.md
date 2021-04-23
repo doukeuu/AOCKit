@@ -22,7 +22,7 @@ pod 'AOCKit'
 
 ## Author
 
-pan, panwei@sanshaoxingqiu.cn
+pan
 
 ## License
 
