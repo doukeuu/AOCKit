@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'AOCKit_Example' do
+  pod 'AOCKit', :path => '../'
+
+  target 'AOCKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
