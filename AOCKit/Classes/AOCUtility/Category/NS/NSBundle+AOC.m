@@ -15,7 +15,7 @@
     static NSBundle *aocBundle = nil;
     if (aocBundle == nil) {
         NSBundle *bundle = [NSBundle bundleForClass:[AOCNavigationController class]];
-        NSString *path = [bundle pathForResource:@"AOCKit" ofType:@"bundle"];
+        NSString *path = [bundle pathForResource:@"AOCImage" ofType:@"bundle"];
         aocBundle = [NSBundle bundleWithPath:path];
     }
     return aocBundle;
