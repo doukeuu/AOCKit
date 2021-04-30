@@ -7,42 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AEA324F4EC26440E1A3D54D5F2160D1 /* AOCTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A9EC6DE5CA66D03BB3015FC566E266 /* AOCTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E87073D7D98C4E848C156F81BD00C56 /* AOCConstantKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 437242D5766976B15787F6A51A654C74 /* AOCConstantKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E6A6CD5B7CECFC85585B1750A1C7638 /* AOCDefineKey.h in Headers */ = {isa = PBXBuildFile; fileRef = E126F5A1DA02E7C1727662C8E7781F42 /* AOCDefineKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FA77DFB0E415868BD9454D53A692FA4 /* AOCDefineFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B0133AEB9805F9445C1ABF8698AB713 /* AOCDefineFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15EB4BCAE089A5B9A8A50070606D6B18 /* Pods-AOCKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 631335E49E67DADC66CC8F339E122D82 /* Pods-AOCKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		175A3169DD63BEFD95239DBD5945B0D8 /* AOCKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E5879793D4658450E660E3A68D2CF4E0 /* AOCKit.bundle */; };
-		1C39C09837BD50B6A9E8713A6E69507D /* AOCWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228BC140B77F6C212446F20CB1D9AB2 /* AOCWebController.m */; };
-		21A21DD0B686DEC38CA37516D046AFCB /* AOCDefineFont.h in Headers */ = {isa = PBXBuildFile; fileRef = FA228C6FE4FE5D5B46F31D99A76BD892 /* AOCDefineFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		313BE217F32D0D5DE65E206A01C4A026 /* AOCWebController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EB57412C31DE1D4B99E2BA3C93C975E /* AOCWebController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A140667F1AB775EBA4ACDD103E60FB8 /* AOCTableController.h in Headers */ = {isa = PBXBuildFile; fileRef = C34E4F8B6B11856B98DC4B5E1B0FD8A2 /* AOCTableController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B92BEA4AA9519C6BFB1B98422F6CAF6 /* AOCCollectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F947E6616040C643B50941B3D43280 /* AOCCollectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B9ADDD454D6514E2834EACE0A68D428 /* NSBundle+AOC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2D199C9CEA2282AFDD28B10DEB738F /* NSBundle+AOC.m */; };
-		524548F8263BFBB600F85F6A /* AOCImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 524548F7263BFBB600F85F6A /* AOCImage.bundle */; };
-		52454915263BFCE200F85F6A /* AOCImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 524548F7263BFBB600F85F6A /* AOCImage.bundle */; };
-		5C4A21AD407CCFBD027358400BB34B67 /* AOCDefineFunc.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E5E43452CFF844CEB3ED24037C33DDE /* AOCDefineFunc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17D6C8362E417CA8799CBC8A1FD1E306 /* AOCDefineColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A161BE86FB6060F17242D2E3A3118B2 /* AOCDefineColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FF7187A4805D66B29348C0E9DBC3D9D /* AOCImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DB7A75DBB029C5D5054C07D2334DC8C /* AOCImage.bundle */; };
+		37E991D9D21DDE887C40F0EB700D3340 /* UIImage+AOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E87416849991C78F6524B4C643571 /* UIImage+AOC.m */; };
+		3AAE8A3C543D1B5710185EFE04AEBD65 /* NSBundle+AOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E420CB63581FDB1BFD34081280ECE73 /* NSBundle+AOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CD86318677B99EF94F168F137CFCDDD /* AOCDefineFunc.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E44377C9568B10DBCC3CE267CFCC432 /* AOCDefineFunc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		525FBFF82B839A72C5926EA995036E1F /* AOCBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14028B337CE1F0149FF8964840331304 /* AOCBaseController.m */; };
+		5C117B87C68E9079E84915EF58952AAB /* NSBundle+AOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4ED0BD7CF43AF1DCC3F4E882F7FD76 /* NSBundle+AOC.m */; };
+		5E2260E70091E3F49CF7F5DE2D5EBEC0 /* AOCConstantKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 162463BF3FD3333C5E5FB798BFB5C362 /* AOCConstantKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		673AAD85FACA6F1BF25CA12252A00BD9 /* Pods-AOCKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F9644F28FCEAA5A5AC360527D0BBB7 /* Pods-AOCKit_Tests-dummy.m */; };
-		679A081AA2C309F6B719AEBC94BB259A /* AOCEnumeration.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C306830FCEB681326210E33D42ABA6D /* AOCEnumeration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DEFB993E4C4B50FEB20FF745803D83E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		7516F7F8DE9FCC1DF5F909BA213A9C7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		7693FB27FE642B45AD1AAA9ABA152051 /* AOCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50457887C3CA66F3169AF818294D792F /* AOCNavigationController.m */; };
-		77AD4D309D092092B98201DD4AB784DA /* AOCTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 253D785EC4145C14725CC9B6874332E3 /* AOCTableController.m */; };
-		780B7F7AB13B03E7F7EECEA9705E7727 /* AOCDefineColor.h in Headers */ = {isa = PBXBuildFile; fileRef = B2ECFCB72BEC0A6B2DB1D7A63F979162 /* AOCDefineColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		788CAF66D94507BF8E39416F69EEBD2C /* AOCConstantKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA88C635A02D0B14F098820815F9A8A /* AOCConstantKey.m */; };
-		7F5DAD406612ADD0C95320A8B15CCB9C /* AOCKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E3305AAEB6CCA0020D2297CB89814 /* AOCKit-dummy.m */; };
-		904B69D96793659B31682712DD2ED681 /* UIImage+AOC.h in Headers */ = {isa = PBXBuildFile; fileRef = F055988E18F193BAA1F3BBF34AABF0B9 /* UIImage+AOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7574FA1A90B7BEEA88FBD08A4815284A /* AOCTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88908836C7D1BC955206AB646929C694 /* AOCTableController.m */; };
+		75B2A039CDA49195B1861AA4AA04016C /* AOCKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 055630CF743FF29E0650A3BF3304E696 /* AOCKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		900272CD13EC871B6E5BB0E85ED10DBD /* AOCWebController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E3CDC772B6EF3E1955C95BB1E087028 /* AOCWebController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		907BB7F446644FFD906FA1BF0B2242EC /* Pods-AOCKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFD5A5D773CBF768168979E0147B2A1 /* Pods-AOCKit_Example-dummy.m */; };
+		91950447E7BB46A41C4EC659BEF2E994 /* AOCEnumeration.h in Headers */ = {isa = PBXBuildFile; fileRef = 82CFF148A061099A4C56F3D44B56330F /* AOCEnumeration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92CEE8C2DFAD44C67B4E12EA209117C2 /* AOCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C5141182B636340794C3F99059775F /* AOCTabBarController.m */; };
+		997A987F1614ACFB0D622686979BB0AE /* AOCBaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D4A44BD674611396E9CF166CCAC72C8 /* AOCBaseController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ACA0531D6470C0433CB93BA4DC52622 /* AOCNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 79DB573AF55D5B388760BCF38DD02BB2 /* AOCNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C9C6F2EE6272FBF2AC3398750EB31C9 /* AOCDefineSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 8927FC3C5E6EA1F3CFD8218F17B9D06C /* AOCDefineSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D836F050937BEE640D8E74F771C479E /* Pods-AOCKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C67E69C2C5E6E8EB11C83D95D10BCF /* Pods-AOCKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3E593BCC1ECFA85E8831DB031012B0F /* UIImage+AOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 037236D7D33C9F1253142DA0B44FADA2 /* UIImage+AOC.m */; };
-		AE1BB2B482554A8D1CB27402717E8C2E /* AOCBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F5E8A949FAC701F0A91C313398A827 /* AOCBaseController.m */; };
+		9FB003AF7F190E4151EA39A28D333063 /* AOCKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0DD9B912B9B0730064A79BF15959B2 /* AOCKit-dummy.m */; };
+		A0B4ADA8D1E8D931D692C239B0369487 /* UIImage+AOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 55CF01E93E5B353807E29C82DDE6279B /* UIImage+AOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A224B6143C983159EE5D532C3CD50AF4 /* AOCTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7059444E4BE1E0BB8FC90A363F454C5D /* AOCTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A699AF3CC64CCC6BC2E3BDD7817042EA /* AOCCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395295B7C7D552F1C530BFD4B27E4379 /* AOCCollectionController.m */; };
+		AE80A4340073E0672C9FA5F59F08C3F0 /* AOCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16674C0E2486AEF1FFC8BA0A492C7EAC /* AOCNavigationController.m */; };
+		B1EC7DD45AD6A3C6FEB283671FE044C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B9484204CA13D22BDDD9881473121F57 /* AOCCollectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 61263840184210EB250BFEBD001328C0 /* AOCCollectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA539054402849875143BC32E8FFBB4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C3BE0E418D76176C974778221CAB487E /* AOCDefineSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 374C7352EC1765E4F1923718D163CCF3 /* AOCDefineSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5D6B0A9B9D905D914903442B53E8963 /* AOCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58952809C3794759A975B7FCF1ED9FA7 /* AOCTabBarController.m */; };
-		D7E3C1C6FC50472F6004FA7A8754531D /* AOCDefineKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A54A6EF880F566837BF598A59B2FEE /* AOCDefineKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8C57A34F86C17DE41EF24781B3D7C72 /* AOCBaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1F955AB14DCC76C1DE3C40A0BE94DE /* AOCBaseController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE206C9D329C3C26DEACECAAB067D7D7 /* NSBundle+AOC.h in Headers */ = {isa = PBXBuildFile; fileRef = E621F58FB50C8B72F52D2EB11B66EC7C /* NSBundle+AOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E786475549547CA5B378526BAB421F80 /* AOCCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4605641FB64F8729D521622263808C15 /* AOCCollectionController.m */; };
-		ECE2DC2CA3EB87C95EE01C6837421DD2 /* AOCKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B584A95E1BDFCC673FC002732F06171A /* AOCKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2AFD906ABAC83981E47DF3383D7075C /* AOCNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = F268391FEC7EB35F2E3B7DF4E8FD14C5 /* AOCNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D09465691E032693C9228C6326D84C37 /* AOCTableController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E597CADD521020C3AF09E888EC3D66D /* AOCTableController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEA2387C5047FE2C096CC213E5798758 /* AOCConstantKey.m in Sources */ = {isa = PBXBuildFile; fileRef = D0980AAAB0A5ECADECD0B1110589263F /* AOCConstantKey.m */; };
+		FC79565078CD09654EA0D06F16EE1D92 /* AOCWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90950451665B4AB0916A3DAE6881A6C8 /* AOCWebController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,80 +61,79 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		037236D7D33C9F1253142DA0B44FADA2 /* UIImage+AOC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AOC.m"; sourceTree = "<group>"; };
-		08A54A6EF880F566837BF598A59B2FEE /* AOCDefineKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCDefineKey.h; sourceTree = "<group>"; };
-		0D4EF956F133843CB47B80A1C547F3FE /* AOCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AOCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02976E923F92625890CE03509AD3E257 /* AOCKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AOCKit.release.xcconfig; sourceTree = "<group>"; };
+		055630CF743FF29E0650A3BF3304E696 /* AOCKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AOCKit-umbrella.h"; sourceTree = "<group>"; };
+		0D4EF956F133843CB47B80A1C547F3FE /* AOCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AOCKit.framework; path = AOCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFD5A5D773CBF768168979E0147B2A1 /* Pods-AOCKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AOCKit_Example-dummy.m"; sourceTree = "<group>"; };
-		0F68DFB5F61497A94481A8D289CD73A3 /* AOCKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AOCKit.release.xcconfig; sourceTree = "<group>"; };
-		108389346E9407F8C447AF72DA96675A /* Pods_AOCKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOCKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11F5E8A949FAC701F0A91C313398A827 /* AOCBaseController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCBaseController.m; sourceTree = "<group>"; };
+		0E597CADD521020C3AF09E888EC3D66D /* AOCTableController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCTableController.h; sourceTree = "<group>"; };
+		0ED3A241A69948DEB4BC5A0C3388F581 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		108389346E9407F8C447AF72DA96675A /* Pods_AOCKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AOCKit_Example.framework; path = "Pods-AOCKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14028B337CE1F0149FF8964840331304 /* AOCBaseController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCBaseController.m; sourceTree = "<group>"; };
+		162463BF3FD3333C5E5FB798BFB5C362 /* AOCConstantKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCConstantKey.h; sourceTree = "<group>"; };
+		16674C0E2486AEF1FFC8BA0A492C7EAC /* AOCNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCNavigationController.m; sourceTree = "<group>"; };
+		17C5141182B636340794C3F99059775F /* AOCTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCTabBarController.m; sourceTree = "<group>"; };
+		1A0DD9B912B9B0730064A79BF15959B2 /* AOCKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AOCKit-dummy.m"; sourceTree = "<group>"; };
+		1CD31CB236432FCCDC82237E86D05936 /* AOCKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AOCKit-prefix.pch"; sourceTree = "<group>"; };
 		1DD292C5A387CB352DC90290D7872946 /* Pods-AOCKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AOCKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1E0EF382D2B47ABB7B42E10794E69B8E /* Pods-AOCKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AOCKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		253D785EC4145C14725CC9B6874332E3 /* AOCTableController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCTableController.m; sourceTree = "<group>"; };
-		263B1671ECF12659F945CDBDD000876F /* AOCKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AOCKit.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		22145B43D6D0D3B051532A9309F977E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		248A31CB10FB427C8C040C77C76E7AC2 /* AOCKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AOCKit.modulemap; sourceTree = "<group>"; };
 		29F63002D15ECBAB29215F0C8BAE0AA7 /* Pods-AOCKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AOCKit_Tests.modulemap"; sourceTree = "<group>"; };
-		2C306830FCEB681326210E33D42ABA6D /* AOCEnumeration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCEnumeration.h; sourceTree = "<group>"; };
-		2E1F955AB14DCC76C1DE3C40A0BE94DE /* AOCBaseController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCBaseController.h; sourceTree = "<group>"; };
-		2E5E43452CFF844CEB3ED24037C33DDE /* AOCDefineFunc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCDefineFunc.h; sourceTree = "<group>"; };
+		2DF121290DEC81BD331C8F715E71D6A4 /* AOCKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AOCKit.debug.xcconfig; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		34DEA695CDDFB7785240483AB74F3797 /* Pods-AOCKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AOCKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		364E3305AAEB6CCA0020D2297CB89814 /* AOCKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AOCKit-dummy.m"; sourceTree = "<group>"; };
-		374C7352EC1765E4F1923718D163CCF3 /* AOCDefineSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCDefineSize.h; sourceTree = "<group>"; };
-		3EA88C635A02D0B14F098820815F9A8A /* AOCConstantKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCConstantKey.m; sourceTree = "<group>"; };
-		3EB57412C31DE1D4B99E2BA3C93C975E /* AOCWebController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCWebController.h; sourceTree = "<group>"; };
-		437242D5766976B15787F6A51A654C74 /* AOCConstantKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCConstantKey.h; sourceTree = "<group>"; };
-		4605641FB64F8729D521622263808C15 /* AOCCollectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCCollectionController.m; sourceTree = "<group>"; };
-		46A9EC6DE5CA66D03BB3015FC566E266 /* AOCTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCTabBarController.h; sourceTree = "<group>"; };
-		50457887C3CA66F3169AF818294D792F /* AOCNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCNavigationController.m; sourceTree = "<group>"; };
-		524548F7263BFBB600F85F6A /* AOCImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AOCImage.bundle; path = AOCKit/Assets/AOCImage.bundle; sourceTree = "<group>"; };
-		58952809C3794759A975B7FCF1ED9FA7 /* AOCTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCTabBarController.m; sourceTree = "<group>"; };
-		5CE055DB3F5157C67D5164A3139B1512 /* ResourceBundle-AOCKit-AOCKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AOCKit-AOCKit-Info.plist"; sourceTree = "<group>"; };
+		395295B7C7D552F1C530BFD4B27E4379 /* AOCCollectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCCollectionController.m; sourceTree = "<group>"; };
+		3D4A44BD674611396E9CF166CCAC72C8 /* AOCBaseController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCBaseController.h; sourceTree = "<group>"; };
+		3E44377C9568B10DBCC3CE267CFCC432 /* AOCDefineFunc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCDefineFunc.h; sourceTree = "<group>"; };
+		4E0E87416849991C78F6524B4C643571 /* UIImage+AOC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AOC.m"; sourceTree = "<group>"; };
+		4E3CDC772B6EF3E1955C95BB1E087028 /* AOCWebController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCWebController.h; sourceTree = "<group>"; };
+		55CF01E93E5B353807E29C82DDE6279B /* UIImage+AOC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+AOC.h"; sourceTree = "<group>"; };
+		5B0133AEB9805F9445C1ABF8698AB713 /* AOCDefineFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCDefineFont.h; sourceTree = "<group>"; };
+		5B4ED0BD7CF43AF1DCC3F4E882F7FD76 /* NSBundle+AOC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+AOC.m"; sourceTree = "<group>"; };
+		5DB7A75DBB029C5D5054C07D2334DC8C /* AOCImage.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AOCImage.bundle; path = AOCKit/Assets/AOCImage.bundle; sourceTree = "<group>"; };
+		5E420CB63581FDB1BFD34081280ECE73 /* NSBundle+AOC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+AOC.h"; sourceTree = "<group>"; };
+		61263840184210EB250BFEBD001328C0 /* AOCCollectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCCollectionController.h; sourceTree = "<group>"; };
 		631335E49E67DADC66CC8F339E122D82 /* Pods-AOCKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AOCKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		6858432149FA9D767DD775E9A7D30C2E /* AOCKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AOCKit-prefix.pch"; sourceTree = "<group>"; };
-		7228BC140B77F6C212446F20CB1D9AB2 /* AOCWebController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCWebController.m; sourceTree = "<group>"; };
+		7059444E4BE1E0BB8FC90A363F454C5D /* AOCTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCTabBarController.h; sourceTree = "<group>"; };
 		7409AC6FD5F797BE91ADF546F8D31E9E /* Pods-AOCKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AOCKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		75332BACD95839A0BD9D0E23C62F96BE /* Pods-AOCKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AOCKit_Example.modulemap"; sourceTree = "<group>"; };
 		78F9644F28FCEAA5A5AC360527D0BBB7 /* Pods-AOCKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AOCKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		84F947E6616040C643B50941B3D43280 /* AOCCollectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCCollectionController.h; sourceTree = "<group>"; };
-		8BB4F60E74240A59FEFFA9765F527EB1 /* Pods_AOCKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOCKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DB573AF55D5B388760BCF38DD02BB2 /* AOCNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCNavigationController.h; sourceTree = "<group>"; };
+		7A161BE86FB6060F17242D2E3A3118B2 /* AOCDefineColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCDefineColor.h; sourceTree = "<group>"; };
+		82CFF148A061099A4C56F3D44B56330F /* AOCEnumeration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCEnumeration.h; sourceTree = "<group>"; };
+		88908836C7D1BC955206AB646929C694 /* AOCTableController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCTableController.m; sourceTree = "<group>"; };
+		8927FC3C5E6EA1F3CFD8218F17B9D06C /* AOCDefineSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCDefineSize.h; sourceTree = "<group>"; };
+		8B100A5CD9F8CFD26EB16E5C08F5A03E /* AOCKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AOCKit-Info.plist"; sourceTree = "<group>"; };
+		8BB4F60E74240A59FEFFA9765F527EB1 /* Pods_AOCKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AOCKit_Tests.framework; path = "Pods-AOCKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED2AC96B1975F5A638A8DA405F2F399 /* Pods-AOCKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AOCKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		920F2FE4ABECB43ADF086892AA800CF5 /* AOCKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AOCKit-Info.plist"; sourceTree = "<group>"; };
+		90950451665B4AB0916A3DAE6881A6C8 /* AOCWebController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCWebController.m; sourceTree = "<group>"; };
 		954CA8638020DD37E3025C1349F618F6 /* Pods-AOCKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AOCKit_Example-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3397D7CF98A4828F6C59AEE9D0BD675 /* Pods-AOCKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AOCKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A752995466A0DDF283C8198895C98A0D /* Pods-AOCKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AOCKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A7FB1A7D9B6900A9941B43D8E49EA8B2 /* Pods-AOCKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AOCKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		A856BEEDE7C3941AD86607D14D40EF78 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B2ECFCB72BEC0A6B2DB1D7A63F979162 /* AOCDefineColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCDefineColor.h; sourceTree = "<group>"; };
-		B584A95E1BDFCC673FC002732F06171A /* AOCKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AOCKit-umbrella.h"; sourceTree = "<group>"; };
 		BBFADFC5B5B6167E6BAB4051DA8CF41C /* Pods-AOCKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AOCKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C34E4F8B6B11856B98DC4B5E1B0FD8A2 /* AOCTableController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCTableController.h; sourceTree = "<group>"; };
-		C7ED31166BB378B4927197EA4B67D21B /* AOCKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AOCKit.debug.xcconfig; sourceTree = "<group>"; };
-		CB2D199C9CEA2282AFDD28B10DEB738F /* NSBundle+AOC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+AOC.m"; sourceTree = "<group>"; };
+		CC5669A0A98F839FC7321431F64CAD77 /* AOCKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AOCKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CCD1A8D3F1FFE0DA8D72B957F149B0FC /* Pods-AOCKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AOCKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D72C65B81188718F82735DAA8E0F2115 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		DC00338EEF37B74D02765AC364FABF21 /* AOCKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AOCKit.modulemap; sourceTree = "<group>"; };
-		E5879793D4658450E660E3A68D2CF4E0 /* AOCKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOCKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		E621F58FB50C8B72F52D2EB11B66EC7C /* NSBundle+AOC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+AOC.h"; sourceTree = "<group>"; };
-		F055988E18F193BAA1F3BBF34AABF0B9 /* UIImage+AOC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+AOC.h"; sourceTree = "<group>"; };
-		F268391FEC7EB35F2E3B7DF4E8FD14C5 /* AOCNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCNavigationController.h; sourceTree = "<group>"; };
+		D0980AAAB0A5ECADECD0B1110589263F /* AOCConstantKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCConstantKey.m; sourceTree = "<group>"; };
+		E126F5A1DA02E7C1727662C8E7781F42 /* AOCDefineKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCDefineKey.h; sourceTree = "<group>"; };
 		F6C67E69C2C5E6E8EB11C83D95D10BCF /* Pods-AOCKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AOCKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		FA228C6FE4FE5D5B46F31D99A76BD892 /* AOCDefineFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCDefineFont.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1483683C0EFF75B0EAC46B42679147CA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3E704BBB4D699C5C37F56FE0A231DAB8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BA539054402849875143BC32E8FFBB4B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44AD7351B70648FBED3BEAB265E45F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EC7DD45AD6A3C6FEB283671FE044C1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,25 +145,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3B57CF7F555CA7962CB8EFE9A93706D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6DEFB993E4C4B50FEB20FF745803D83E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C45A45EE6EAA9F0A0EBC79496290C83 /* Pod */ = {
+		096D9E4B5DD0682EA98600C0C17A46FB /* AOCUtility */ = {
 			isa = PBXGroup;
 			children = (
-				263B1671ECF12659F945CDBDD000876F /* AOCKit.podspec */,
-				D72C65B81188718F82735DAA8E0F2115 /* LICENSE */,
-				A856BEEDE7C3941AD86607D14D40EF78 /* README.md */,
+				D94F3FCB91B555918643CF5EA75AD028 /* Category */,
+				DB3EEF3891D1F42CBC32E430E73CDE5A /* Definition */,
 			);
-			name = Pod;
+			name = AOCUtility;
+			path = AOCKit/Classes/AOCUtility;
+			sourceTree = "<group>";
+		};
+		119D5B82775BAC04474AAEBFF8099A40 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				248A31CB10FB427C8C040C77C76E7AC2 /* AOCKit.modulemap */,
+				1A0DD9B912B9B0730064A79BF15959B2 /* AOCKit-dummy.m */,
+				8B100A5CD9F8CFD26EB16E5C08F5A03E /* AOCKit-Info.plist */,
+				1CD31CB236432FCCDC82237E86D05936 /* AOCKit-prefix.pch */,
+				055630CF743FF29E0650A3BF3304E696 /* AOCKit-umbrella.h */,
+				2DF121290DEC81BD331C8F715E71D6A4 /* AOCKit.debug.xcconfig */,
+				02976E923F92625890CE03509AD3E257 /* AOCKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AOCKit";
 			sourceTree = "<group>";
 		};
 		38A913EABAA84D003C1064105BABD697 /* Targets Support Files */ = {
@@ -178,29 +182,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4B5917BFCD1872631AB9617AC3F2EB6C /* Support Files */ = {
+		3BE4D900EC64706964B3F98ECD406D43 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				DC00338EEF37B74D02765AC364FABF21 /* AOCKit.modulemap */,
-				364E3305AAEB6CCA0020D2297CB89814 /* AOCKit-dummy.m */,
-				920F2FE4ABECB43ADF086892AA800CF5 /* AOCKit-Info.plist */,
-				6858432149FA9D767DD775E9A7D30C2E /* AOCKit-prefix.pch */,
-				B584A95E1BDFCC673FC002732F06171A /* AOCKit-umbrella.h */,
-				C7ED31166BB378B4927197EA4B67D21B /* AOCKit.debug.xcconfig */,
-				0F68DFB5F61497A94481A8D289CD73A3 /* AOCKit.release.xcconfig */,
-				5CE055DB3F5157C67D5164A3139B1512 /* ResourceBundle-AOCKit-AOCKit-Info.plist */,
+				CC5669A0A98F839FC7321431F64CAD77 /* AOCKit.podspec */,
+				0ED3A241A69948DEB4BC5A0C3388F581 /* LICENSE */,
+				22145B43D6D0D3B051532A9309F977E4 /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AOCKit";
-			sourceTree = "<group>";
-		};
-		55FC05846189771107E5D3B5973626E5 /* AOCModule */ = {
-			isa = PBXGroup;
-			children = (
-				AC894739D5B3421120D78485F30269C1 /* Basic */,
-			);
-			name = AOCModule;
-			path = AOCKit/Classes/AOCModule;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		631B924FEA9A73CB057B01E56CC206F6 /* Pods-AOCKit_Tests */ = {
@@ -219,28 +208,24 @@
 			path = "Target Support Files/Pods-AOCKit_Tests";
 			sourceTree = "<group>";
 		};
-		7260DBAE63CBE894735F13B2C812559C /* UI */ = {
+		7A8775C10A98991E8DEF3586D5DF4AFA /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				F055988E18F193BAA1F3BBF34AABF0B9 /* UIImage+AOC.h */,
-				037236D7D33C9F1253142DA0B44FADA2 /* UIImage+AOC.m */,
+				55CF01E93E5B353807E29C82DDE6279B /* UIImage+AOC.h */,
+				4E0E87416849991C78F6524B4C643571 /* UIImage+AOC.m */,
 			);
+			name = UI;
 			path = UI;
 			sourceTree = "<group>";
 		};
-		9DA4403B73448F6C8A28825604C6FEF9 /* Definition */ = {
+		7AE319FEC46FF1D152FBAE2AD6FC7791 /* NS */ = {
 			isa = PBXGroup;
 			children = (
-				437242D5766976B15787F6A51A654C74 /* AOCConstantKey.h */,
-				3EA88C635A02D0B14F098820815F9A8A /* AOCConstantKey.m */,
-				B2ECFCB72BEC0A6B2DB1D7A63F979162 /* AOCDefineColor.h */,
-				FA228C6FE4FE5D5B46F31D99A76BD892 /* AOCDefineFont.h */,
-				2E5E43452CFF844CEB3ED24037C33DDE /* AOCDefineFunc.h */,
-				08A54A6EF880F566837BF598A59B2FEE /* AOCDefineKey.h */,
-				374C7352EC1765E4F1923718D163CCF3 /* AOCDefineSize.h */,
-				2C306830FCEB681326210E33D42ABA6D /* AOCEnumeration.h */,
+				5E420CB63581FDB1BFD34081280ECE73 /* NSBundle+AOC.h */,
+				5B4ED0BD7CF43AF1DCC3F4E882F7FD76 /* NSBundle+AOC.m */,
 			);
-			path = Definition;
+			name = NS;
+			path = NS;
 			sourceTree = "<group>";
 		};
 		A26DCD0DA3CFDE1A3790BF55743098A9 /* Pods-AOCKit_Example */ = {
@@ -260,40 +245,25 @@
 			path = "Target Support Files/Pods-AOCKit_Example";
 			sourceTree = "<group>";
 		};
+		AAE9C66B0F0D82C7EAE50BA2B02A3345 /* AOCKit */ = {
+			isa = PBXGroup;
+			children = (
+				FDDCE019BD216BA06DB050F1D92F5C35 /* AOCModule */,
+				096D9E4B5DD0682EA98600C0C17A46FB /* AOCUtility */,
+				3BE4D900EC64706964B3F98ECD406D43 /* Pod */,
+				DC08DC807420AF24FD6CF181795505FA /* Resources */,
+				119D5B82775BAC04474AAEBFF8099A40 /* Support Files */,
+			);
+			name = AOCKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		AAEEDFBA35A434A50EBBE2E65625FA40 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C2C51513E879813A3862D3AA93E86C9B /* AOCKit */,
+				AAE9C66B0F0D82C7EAE50BA2B02A3345 /* AOCKit */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		AC894739D5B3421120D78485F30269C1 /* Basic */ = {
-			isa = PBXGroup;
-			children = (
-				2E1F955AB14DCC76C1DE3C40A0BE94DE /* AOCBaseController.h */,
-				11F5E8A949FAC701F0A91C313398A827 /* AOCBaseController.m */,
-				84F947E6616040C643B50941B3D43280 /* AOCCollectionController.h */,
-				4605641FB64F8729D521622263808C15 /* AOCCollectionController.m */,
-				F268391FEC7EB35F2E3B7DF4E8FD14C5 /* AOCNavigationController.h */,
-				50457887C3CA66F3169AF818294D792F /* AOCNavigationController.m */,
-				46A9EC6DE5CA66D03BB3015FC566E266 /* AOCTabBarController.h */,
-				58952809C3794759A975B7FCF1ED9FA7 /* AOCTabBarController.m */,
-				C34E4F8B6B11856B98DC4B5E1B0FD8A2 /* AOCTableController.h */,
-				253D785EC4145C14725CC9B6874332E3 /* AOCTableController.m */,
-				3EB57412C31DE1D4B99E2BA3C93C975E /* AOCWebController.h */,
-				7228BC140B77F6C212446F20CB1D9AB2 /* AOCWebController.m */,
-			);
-			path = Basic;
-			sourceTree = "<group>";
-		};
-		B536C61B1AA38619BEB78BD80BA04ADB /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				E5F710DAD612F7855320E53F9290DB68 /* NS */,
-				7260DBAE63CBE894735F13B2C812559C /* UI */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -304,17 +274,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C2C51513E879813A3862D3AA93E86C9B /* AOCKit */ = {
+		CE67AD7C39B9BE7B1CBAA8C7F547FCE1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				524548F7263BFBB600F85F6A /* AOCImage.bundle */,
-				55FC05846189771107E5D3B5973626E5 /* AOCModule */,
-				E3BE1CBD4848A7616855EEF0527B5975 /* AOCUtility */,
-				0C45A45EE6EAA9F0A0EBC79496290C83 /* Pod */,
-				4B5917BFCD1872631AB9617AC3F2EB6C /* Support Files */,
+				0D4EF956F133843CB47B80A1C547F3FE /* AOCKit.framework */,
+				108389346E9407F8C447AF72DA96675A /* Pods_AOCKit_Example.framework */,
+				8BB4F60E74240A59FEFFA9765F527EB1 /* Pods_AOCKit_Tests.framework */,
 			);
-			name = AOCKit;
-			path = ../..;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -323,7 +290,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				AAEEDFBA35A434A50EBBE2E65625FA40 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				D8322A20E29F5F2D7F2463E5D51F5564 /* Products */,
+				CE67AD7C39B9BE7B1CBAA8C7F547FCE1 /* Products */,
 				38A913EABAA84D003C1064105BABD697 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -336,34 +303,67 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D8322A20E29F5F2D7F2463E5D51F5564 /* Products */ = {
+		D94F3FCB91B555918643CF5EA75AD028 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				E5879793D4658450E660E3A68D2CF4E0 /* AOCKit.bundle */,
-				0D4EF956F133843CB47B80A1C547F3FE /* AOCKit.framework */,
-				108389346E9407F8C447AF72DA96675A /* Pods_AOCKit_Example.framework */,
-				8BB4F60E74240A59FEFFA9765F527EB1 /* Pods_AOCKit_Tests.framework */,
+				7AE319FEC46FF1D152FBAE2AD6FC7791 /* NS */,
+				7A8775C10A98991E8DEF3586D5DF4AFA /* UI */,
 			);
-			name = Products;
+			name = Category;
+			path = Category;
 			sourceTree = "<group>";
 		};
-		E3BE1CBD4848A7616855EEF0527B5975 /* AOCUtility */ = {
+		DB3EEF3891D1F42CBC32E430E73CDE5A /* Definition */ = {
 			isa = PBXGroup;
 			children = (
-				B536C61B1AA38619BEB78BD80BA04ADB /* Category */,
-				9DA4403B73448F6C8A28825604C6FEF9 /* Definition */,
+				162463BF3FD3333C5E5FB798BFB5C362 /* AOCConstantKey.h */,
+				D0980AAAB0A5ECADECD0B1110589263F /* AOCConstantKey.m */,
+				7A161BE86FB6060F17242D2E3A3118B2 /* AOCDefineColor.h */,
+				5B0133AEB9805F9445C1ABF8698AB713 /* AOCDefineFont.h */,
+				3E44377C9568B10DBCC3CE267CFCC432 /* AOCDefineFunc.h */,
+				E126F5A1DA02E7C1727662C8E7781F42 /* AOCDefineKey.h */,
+				8927FC3C5E6EA1F3CFD8218F17B9D06C /* AOCDefineSize.h */,
+				82CFF148A061099A4C56F3D44B56330F /* AOCEnumeration.h */,
 			);
-			name = AOCUtility;
-			path = AOCKit/Classes/AOCUtility;
+			name = Definition;
+			path = Definition;
 			sourceTree = "<group>";
 		};
-		E5F710DAD612F7855320E53F9290DB68 /* NS */ = {
+		DC08DC807420AF24FD6CF181795505FA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E621F58FB50C8B72F52D2EB11B66EC7C /* NSBundle+AOC.h */,
-				CB2D199C9CEA2282AFDD28B10DEB738F /* NSBundle+AOC.m */,
+				5DB7A75DBB029C5D5054C07D2334DC8C /* AOCImage.bundle */,
 			);
-			path = NS;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E7B57814394D9D6120E39C7C0F06355D /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A44BD674611396E9CF166CCAC72C8 /* AOCBaseController.h */,
+				14028B337CE1F0149FF8964840331304 /* AOCBaseController.m */,
+				61263840184210EB250BFEBD001328C0 /* AOCCollectionController.h */,
+				395295B7C7D552F1C530BFD4B27E4379 /* AOCCollectionController.m */,
+				79DB573AF55D5B388760BCF38DD02BB2 /* AOCNavigationController.h */,
+				16674C0E2486AEF1FFC8BA0A492C7EAC /* AOCNavigationController.m */,
+				7059444E4BE1E0BB8FC90A363F454C5D /* AOCTabBarController.h */,
+				17C5141182B636340794C3F99059775F /* AOCTabBarController.m */,
+				0E597CADD521020C3AF09E888EC3D66D /* AOCTableController.h */,
+				88908836C7D1BC955206AB646929C694 /* AOCTableController.m */,
+				4E3CDC772B6EF3E1955C95BB1E087028 /* AOCWebController.h */,
+				90950451665B4AB0916A3DAE6881A6C8 /* AOCWebController.m */,
+			);
+			name = Basic;
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		FDDCE019BD216BA06DB050F1D92F5C35 /* AOCModule */ = {
+			isa = PBXGroup;
+			children = (
+				E7B57814394D9D6120E39C7C0F06355D /* Basic */,
+			);
+			name = AOCModule;
+			path = AOCKit/Classes/AOCModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,26 +385,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		644415C357B611612ACDD1E32D9F34A9 /* Headers */ = {
+		E75E33F1A65BE456BE72953A4DCC361B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C57A34F86C17DE41EF24781B3D7C72 /* AOCBaseController.h in Headers */,
-				4B92BEA4AA9519C6BFB1B98422F6CAF6 /* AOCCollectionController.h in Headers */,
-				0E87073D7D98C4E848C156F81BD00C56 /* AOCConstantKey.h in Headers */,
-				780B7F7AB13B03E7F7EECEA9705E7727 /* AOCDefineColor.h in Headers */,
-				21A21DD0B686DEC38CA37516D046AFCB /* AOCDefineFont.h in Headers */,
-				5C4A21AD407CCFBD027358400BB34B67 /* AOCDefineFunc.h in Headers */,
-				D7E3C1C6FC50472F6004FA7A8754531D /* AOCDefineKey.h in Headers */,
-				C3BE0E418D76176C974778221CAB487E /* AOCDefineSize.h in Headers */,
-				679A081AA2C309F6B719AEBC94BB259A /* AOCEnumeration.h in Headers */,
-				ECE2DC2CA3EB87C95EE01C6837421DD2 /* AOCKit-umbrella.h in Headers */,
-				F2AFD906ABAC83981E47DF3383D7075C /* AOCNavigationController.h in Headers */,
-				0AEA324F4EC26440E1A3D54D5F2160D1 /* AOCTabBarController.h in Headers */,
-				3A140667F1AB775EBA4ACDD103E60FB8 /* AOCTableController.h in Headers */,
-				313BE217F32D0D5DE65E206A01C4A026 /* AOCWebController.h in Headers */,
-				DE206C9D329C3C26DEACECAAB067D7D7 /* NSBundle+AOC.h in Headers */,
-				904B69D96793659B31682712DD2ED681 /* UIImage+AOC.h in Headers */,
+				997A987F1614ACFB0D622686979BB0AE /* AOCBaseController.h in Headers */,
+				B9484204CA13D22BDDD9881473121F57 /* AOCCollectionController.h in Headers */,
+				5E2260E70091E3F49CF7F5DE2D5EBEC0 /* AOCConstantKey.h in Headers */,
+				17D6C8362E417CA8799CBC8A1FD1E306 /* AOCDefineColor.h in Headers */,
+				0FA77DFB0E415868BD9454D53A692FA4 /* AOCDefineFont.h in Headers */,
+				3CD86318677B99EF94F168F137CFCDDD /* AOCDefineFunc.h in Headers */,
+				0E6A6CD5B7CECFC85585B1750A1C7638 /* AOCDefineKey.h in Headers */,
+				9C9C6F2EE6272FBF2AC3398750EB31C9 /* AOCDefineSize.h in Headers */,
+				91950447E7BB46A41C4EC659BEF2E994 /* AOCEnumeration.h in Headers */,
+				75B2A039CDA49195B1861AA4AA04016C /* AOCKit-umbrella.h in Headers */,
+				9ACA0531D6470C0433CB93BA4DC52622 /* AOCNavigationController.h in Headers */,
+				A224B6143C983159EE5D532C3CD50AF4 /* AOCTabBarController.h in Headers */,
+				D09465691E032693C9228C6326D84C37 /* AOCTableController.h in Headers */,
+				900272CD13EC871B6E5BB0E85ED10DBD /* AOCWebController.h in Headers */,
+				3AAE8A3C543D1B5710185EFE04AEBD65 /* NSBundle+AOC.h in Headers */,
+				A0B4ADA8D1E8D931D692C239B0369487 /* UIImage+AOC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,12 +413,12 @@
 /* Begin PBXNativeTarget section */
 		1439E4C8EC7F5AA38029BE183D57E6D8 /* AOCKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE5A2B05EC22083CEE15022DDAF1BE90 /* Build configuration list for PBXNativeTarget "AOCKit" */;
+			buildConfigurationList = 7EE73C6F4B8953CAECF866B84D57CDA9 /* Build configuration list for PBXNativeTarget "AOCKit" */;
 			buildPhases = (
-				644415C357B611612ACDD1E32D9F34A9 /* Headers */,
-				A8778ED9EF17029301D3CFB9F3F66609 /* Sources */,
-				F3B57CF7F555CA7962CB8EFE9A93706D /* Frameworks */,
-				1B490B2214D65EC9354581C71DA1B66C /* Resources */,
+				E75E33F1A65BE456BE72953A4DCC361B /* Headers */,
+				91C18049BB24190FD6C63D27B5E0016C /* Sources */,
+				44AD7351B70648FBED3BEAB265E45F86 /* Frameworks */,
+				AF082E10C988C9A20CA1D808A24806B5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -467,23 +467,6 @@
 			productReference = 108389346E9407F8C447AF72DA96675A /* Pods_AOCKit_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8BC340F530019AAEF627F523137813D8 /* AOCKit-AOCKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D6705D08A6E03143DFBA2D09E1D56CEE /* Build configuration list for PBXNativeTarget "AOCKit-AOCKit" */;
-			buildPhases = (
-				06B28BC4206A8A92F5DF4DC04B85A41E /* Sources */,
-				1483683C0EFF75B0EAC46B42679147CA /* Frameworks */,
-				42702E3F45A2C0A21D859C43694A80DC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "AOCKit-AOCKit";
-			productName = "AOCKit-AOCKit";
-			productReference = E5879793D4658450E660E3A68D2CF4E0 /* AOCKit.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -502,12 +485,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D8322A20E29F5F2D7F2463E5D51F5564 /* Products */;
+			productRefGroup = CE67AD7C39B9BE7B1CBAA8C7F547FCE1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1439E4C8EC7F5AA38029BE183D57E6D8 /* AOCKit */,
-				8BC340F530019AAEF627F523137813D8 /* AOCKit-AOCKit */,
 				89A1A6DF233D1F3D4F365C108B6E8FC7 /* Pods-AOCKit_Example */,
 				43BD32E0328B262E91078236EF0F262A /* Pods-AOCKit_Tests */,
 			);
@@ -515,20 +497,11 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1B490B2214D65EC9354581C71DA1B66C /* Resources */ = {
+		AF082E10C988C9A20CA1D808A24806B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				175A3169DD63BEFD95239DBD5945B0D8 /* AOCKit.bundle in Resources */,
-				52454915263BFCE200F85F6A /* AOCImage.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42702E3F45A2C0A21D859C43694A80DC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				524548F8263BFBB600F85F6A /* AOCImage.bundle in Resources */,
+				1FF7187A4805D66B29348C0E9DBC3D9D /* AOCImage.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,13 +522,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		06B28BC4206A8A92F5DF4DC04B85A41E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		76B2D23A56D3B466EF84EA881CEFD4E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -564,20 +530,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8778ED9EF17029301D3CFB9F3F66609 /* Sources */ = {
+		91C18049BB24190FD6C63D27B5E0016C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE1BB2B482554A8D1CB27402717E8C2E /* AOCBaseController.m in Sources */,
-				E786475549547CA5B378526BAB421F80 /* AOCCollectionController.m in Sources */,
-				788CAF66D94507BF8E39416F69EEBD2C /* AOCConstantKey.m in Sources */,
-				7F5DAD406612ADD0C95320A8B15CCB9C /* AOCKit-dummy.m in Sources */,
-				7693FB27FE642B45AD1AAA9ABA152051 /* AOCNavigationController.m in Sources */,
-				D5D6B0A9B9D905D914903442B53E8963 /* AOCTabBarController.m in Sources */,
-				77AD4D309D092092B98201DD4AB784DA /* AOCTableController.m in Sources */,
-				1C39C09837BD50B6A9E8713A6E69507D /* AOCWebController.m in Sources */,
-				4B9ADDD454D6514E2834EACE0A68D428 /* NSBundle+AOC.m in Sources */,
-				A3E593BCC1ECFA85E8831DB031012B0F /* UIImage+AOC.m in Sources */,
+				525FBFF82B839A72C5926EA995036E1F /* AOCBaseController.m in Sources */,
+				A699AF3CC64CCC6BC2E3BDD7817042EA /* AOCCollectionController.m in Sources */,
+				DEA2387C5047FE2C096CC213E5798758 /* AOCConstantKey.m in Sources */,
+				9FB003AF7F190E4151EA39A28D333063 /* AOCKit-dummy.m in Sources */,
+				AE80A4340073E0672C9FA5F59F08C3F0 /* AOCNavigationController.m in Sources */,
+				92CEE8C2DFAD44C67B4E12EA209117C2 /* AOCTabBarController.m in Sources */,
+				7574FA1A90B7BEEA88FBD08A4815284A /* AOCTableController.m in Sources */,
+				FC79565078CD09654EA0D06F16EE1D92 /* AOCWebController.m in Sources */,
+				5C117B87C68E9079E84915EF58952AAB /* NSBundle+AOC.m in Sources */,
+				37E991D9D21DDE887C40F0EB700D3340 /* UIImage+AOC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,9 +640,9 @@
 			};
 			name = Debug;
 		};
-		722FE191935D67638E15F961B2F01713 /* Release */ = {
+		779D7F52C48D5827ACF9BA0476009686 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F68DFB5F61497A94481A8D289CD73A3 /* AOCKit.release.xcconfig */;
+			baseConfigurationReference = 02976E923F92625890CE03509AD3E257 /* AOCKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -705,6 +671,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		8D881E53F93ACA244B63957BEAC755BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF121290DEC81BD331C8F715E71D6A4 /* AOCKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AOCKit/AOCKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AOCKit/AOCKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AOCKit/AOCKit.modulemap";
+				PRODUCT_MODULE_NAME = AOCKit;
+				PRODUCT_NAME = AOCKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -759,7 +756,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -862,71 +860,6 @@
 			};
 			name = Debug;
 		};
-		D59DD4A08E8E549CF358754B5B484DBC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7ED31166BB378B4927197EA4B67D21B /* AOCKit.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AOCKit";
-				IBSC_MODULE = AOCKit;
-				INFOPLIST_FILE = "Target Support Files/AOCKit/ResourceBundle-AOCKit-AOCKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = AOCKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		DA05D4D6638D9207362C321981828BF1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F68DFB5F61497A94481A8D289CD73A3 /* AOCKit.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AOCKit";
-				IBSC_MODULE = AOCKit;
-				INFOPLIST_FILE = "Target Support Files/AOCKit/ResourceBundle-AOCKit-AOCKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = AOCKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		DE9B62911E2D552069B7B5F187ED496E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7ED31166BB378B4927197EA4B67D21B /* AOCKit.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AOCKit/AOCKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AOCKit/AOCKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AOCKit/AOCKit.modulemap";
-				PRODUCT_MODULE_NAME = AOCKit;
-				PRODUCT_NAME = AOCKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		F4A70A4A2E6DF54858642A3DD9997564 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A752995466A0DDF283C8198895C98A0D /* Pods-AOCKit_Tests.release.xcconfig */;
@@ -991,20 +924,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE5A2B05EC22083CEE15022DDAF1BE90 /* Build configuration list for PBXNativeTarget "AOCKit" */ = {
+		7EE73C6F4B8953CAECF866B84D57CDA9 /* Build configuration list for PBXNativeTarget "AOCKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE9B62911E2D552069B7B5F187ED496E /* Debug */,
-				722FE191935D67638E15F961B2F01713 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D6705D08A6E03143DFBA2D09E1D56CEE /* Build configuration list for PBXNativeTarget "AOCKit-AOCKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D59DD4A08E8E549CF358754B5B484DBC /* Debug */,
-				DA05D4D6638D9207362C321981828BF1 /* Release */,
+				8D881E53F93ACA244B63957BEAC755BB /* Debug */,
+				779D7F52C48D5827ACF9BA0476009686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

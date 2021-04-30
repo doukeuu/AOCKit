@@ -19,9 +19,5 @@
     "ios": "9.0"
   },
   "source_files": "AOCKit/Classes/**/*",
-  "resource_bundles": {
-    "AOCKit": [
-      "AOCKit/Assets/*.png"
-    ]
-  }
+  "resources": "AOCKit/Assets/AOCImage.bundle"
 }
