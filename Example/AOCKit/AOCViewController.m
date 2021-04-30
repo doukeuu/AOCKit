@@ -14,16 +14,18 @@
 
 @implementation AOCViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationItem.title = @"root";
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesEnded:touches withEvent:event];
+    
+    Class secondClass = NSClassFromString(@"AOCSecondController");
+    id second = [[secondClass alloc] init];
+    [self.navigationController pushViewController:second animated:YES];
 }
 
 @end

@@ -3,20 +3,25 @@
   "version": "0.1.0",
   "summary": "A short description of AOCKit.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/pan/AOCKit",
+  "homepage": "https://github.com/doukeuu/AOCKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "pan": "panwei@sanshaoxingqiu.cn"
+    "pan": ""
   },
   "source": {
-    "git": "https://github.com/pan/AOCKit.git",
+    "git": "https://github.com/doukeuu/AOCKit.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "AOCKit/Classes/**/*"
+  "source_files": "AOCKit/Classes/**/*",
+  "resource_bundles": {
+    "AOCKit": [
+      "AOCKit/Assets/*.png"
+    ]
+  }
 }

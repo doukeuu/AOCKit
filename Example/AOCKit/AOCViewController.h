@@ -6,8 +6,8 @@
 //  Copyright (c) 2021 pan. All rights reserved.
 //
 
-@import UIKit;
+#import "AOCBaseController.h"
 
-@interface AOCViewController : UIViewController
+@interface AOCViewController : AOCBaseController
 
 @end
