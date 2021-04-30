@@ -17,12 +17,11 @@
 		3A140667F1AB775EBA4ACDD103E60FB8 /* AOCTableController.h in Headers */ = {isa = PBXBuildFile; fileRef = C34E4F8B6B11856B98DC4B5E1B0FD8A2 /* AOCTableController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B92BEA4AA9519C6BFB1B98422F6CAF6 /* AOCCollectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F947E6616040C643B50941B3D43280 /* AOCCollectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B9ADDD454D6514E2834EACE0A68D428 /* NSBundle+AOC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2D199C9CEA2282AFDD28B10DEB738F /* NSBundle+AOC.m */; };
-		52454795263BD2E900F85F6A /* AOCImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52454794263BD2E900F85F6A /* AOCImages.xcassets */; };
-		52454796263BD2E900F85F6A /* AOCImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52454794263BD2E900F85F6A /* AOCImages.xcassets */; };
+		524548F8263BFBB600F85F6A /* AOCImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 524548F7263BFBB600F85F6A /* AOCImage.bundle */; };
+		52454915263BFCE200F85F6A /* AOCImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 524548F7263BFBB600F85F6A /* AOCImage.bundle */; };
 		5C4A21AD407CCFBD027358400BB34B67 /* AOCDefineFunc.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E5E43452CFF844CEB3ED24037C33DDE /* AOCDefineFunc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		673AAD85FACA6F1BF25CA12252A00BD9 /* Pods-AOCKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F9644F28FCEAA5A5AC360527D0BBB7 /* Pods-AOCKit_Tests-dummy.m */; };
 		679A081AA2C309F6B719AEBC94BB259A /* AOCEnumeration.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C306830FCEB681326210E33D42ABA6D /* AOCEnumeration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B94AC832126EC3EBB12E532E61D7363 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DB66A37A07D60BA3E5FB14A065F720 /* ReplaceMe.m */; };
 		6DEFB993E4C4B50FEB20FF745803D83E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		7516F7F8DE9FCC1DF5F909BA213A9C7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		7693FB27FE642B45AD1AAA9ABA152051 /* AOCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50457887C3CA66F3169AF818294D792F /* AOCNavigationController.m */; };
@@ -61,13 +60,6 @@
 			remoteGlobalIDString = 1439E4C8EC7F5AA38029BE183D57E6D8;
 			remoteInfo = AOCKit;
 		};
-		DEB1278131A6FED1545EE9978D14C00D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8BC340F530019AAEF627F523137813D8;
-			remoteInfo = "AOCKit-AOCKit";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +73,7 @@
 		1DD292C5A387CB352DC90290D7872946 /* Pods-AOCKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AOCKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1E0EF382D2B47ABB7B42E10794E69B8E /* Pods-AOCKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AOCKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		253D785EC4145C14725CC9B6874332E3 /* AOCTableController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCTableController.m; sourceTree = "<group>"; };
-		263B1671ECF12659F945CDBDD000876F /* AOCKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AOCKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		263B1671ECF12659F945CDBDD000876F /* AOCKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AOCKit.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		29F63002D15ECBAB29215F0C8BAE0AA7 /* Pods-AOCKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AOCKit_Tests.modulemap"; sourceTree = "<group>"; };
 		2C306830FCEB681326210E33D42ABA6D /* AOCEnumeration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCEnumeration.h; sourceTree = "<group>"; };
 		2E1F955AB14DCC76C1DE3C40A0BE94DE /* AOCBaseController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCBaseController.h; sourceTree = "<group>"; };
@@ -96,7 +88,7 @@
 		4605641FB64F8729D521622263808C15 /* AOCCollectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCCollectionController.m; sourceTree = "<group>"; };
 		46A9EC6DE5CA66D03BB3015FC566E266 /* AOCTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCTabBarController.h; sourceTree = "<group>"; };
 		50457887C3CA66F3169AF818294D792F /* AOCNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCNavigationController.m; sourceTree = "<group>"; };
-		52454794263BD2E900F85F6A /* AOCImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = AOCImages.xcassets; path = AOCKit/Assets/AOCImages.xcassets; sourceTree = "<group>"; };
+		524548F7263BFBB600F85F6A /* AOCImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AOCImage.bundle; path = AOCKit/Assets/AOCImage.bundle; sourceTree = "<group>"; };
 		58952809C3794759A975B7FCF1ED9FA7 /* AOCTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCTabBarController.m; sourceTree = "<group>"; };
 		5CE055DB3F5157C67D5164A3139B1512 /* ResourceBundle-AOCKit-AOCKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AOCKit-AOCKit-Info.plist"; sourceTree = "<group>"; };
 		631335E49E67DADC66CC8F339E122D82 /* Pods-AOCKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AOCKit_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -112,7 +104,6 @@
 		954CA8638020DD37E3025C1349F618F6 /* Pods-AOCKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AOCKit_Example-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3397D7CF98A4828F6C59AEE9D0BD675 /* Pods-AOCKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AOCKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A3DB66A37A07D60BA3E5FB14A065F720 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = AOCKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		A752995466A0DDF283C8198895C98A0D /* Pods-AOCKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AOCKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A7FB1A7D9B6900A9941B43D8E49EA8B2 /* Pods-AOCKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AOCKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A856BEEDE7C3941AD86607D14D40EF78 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -316,8 +307,7 @@
 		C2C51513E879813A3862D3AA93E86C9B /* AOCKit */ = {
 			isa = PBXGroup;
 			children = (
-				52454794263BD2E900F85F6A /* AOCImages.xcassets */,
-				A3DB66A37A07D60BA3E5FB14A065F720 /* ReplaceMe.m */,
+				524548F7263BFBB600F85F6A /* AOCImage.bundle */,
 				55FC05846189771107E5D3B5973626E5 /* AOCModule */,
 				E3BE1CBD4848A7616855EEF0527B5975 /* AOCUtility */,
 				0C45A45EE6EAA9F0A0EBC79496290C83 /* Pod */,
@@ -433,7 +423,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				810203FFF16ED1C9E242815BD3F4EBF0 /* PBXTargetDependency */,
 			);
 			name = AOCKit;
 			productName = AOCKit;
@@ -531,7 +520,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				175A3169DD63BEFD95239DBD5945B0D8 /* AOCKit.bundle in Resources */,
-				52454795263BD2E900F85F6A /* AOCImages.xcassets in Resources */,
+				52454915263BFCE200F85F6A /* AOCImage.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,7 +528,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52454796263BD2E900F85F6A /* AOCImages.xcassets in Resources */,
+				524548F8263BFBB600F85F6A /* AOCImage.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,7 +577,6 @@
 				77AD4D309D092092B98201DD4AB784DA /* AOCTableController.m in Sources */,
 				1C39C09837BD50B6A9E8713A6E69507D /* AOCWebController.m in Sources */,
 				4B9ADDD454D6514E2834EACE0A68D428 /* NSBundle+AOC.m in Sources */,
-				6B94AC832126EC3EBB12E532E61D7363 /* ReplaceMe.m in Sources */,
 				A3E593BCC1ECFA85E8831DB031012B0F /* UIImage+AOC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,12 +603,6 @@
 			name = AOCKit;
 			target = 1439E4C8EC7F5AA38029BE183D57E6D8 /* AOCKit */;
 			targetProxy = CD40474B7A0987410A07F9A2A6048CB1 /* PBXContainerItemProxy */;
-		};
-		810203FFF16ED1C9E242815BD3F4EBF0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "AOCKit-AOCKit";
-			target = 8BC340F530019AAEF627F523137813D8 /* AOCKit-AOCKit */;
-			targetProxy = DEB1278131A6FED1545EE9978D14C00D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

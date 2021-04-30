@@ -32,9 +32,11 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'AOCKit/Classes/**/*'
   
-  s.resource_bundles = {
-    'AOCKit' => ['AOCKit/Assets/*.png']
-  }
+  s.resource = 'AOCKit/Assets/AOCImage.bundle'
+  
+  # s.resource_bundles = {
+  #   'AOCKit' => ['AOCKit/Assets/*.png']
+  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
