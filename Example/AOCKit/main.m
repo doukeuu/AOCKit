@@ -7,11 +7,11 @@
 //
 
 @import UIKit;
-#import "AOCAppDelegate.h"
+#import "EFAAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AOCAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([EFAAppDelegate class]));
     }
 }

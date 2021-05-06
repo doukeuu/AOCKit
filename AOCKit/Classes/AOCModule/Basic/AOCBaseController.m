@@ -16,76 +16,26 @@
 
 @implementation AOCBaseController
 
-- (instancetype)init {
-    if (self = [super init]) {
-        [self initConfig];
-    }
-    return self;
-}
-
-// 初始化
-- (void)initConfig {
-    
-}
-
 #pragma mark - Life Cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = kCOLOR_VIEW_BG;
+    // 返回按钮
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"   "
+                                                                 style:UIBarButtonItemStylePlain
+                                                                target:nil action:nil];
+    self.navigationItem.backBarButtonItem = backItem;
     
     self.navEffectView.hidden = NO;
     self.navLineView.hidden = NO;
-    
-    [self configView];
-    [self configFrame];
-    [self requestNet];
-    [self bindAction];
-    
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    
 }
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     
     [self.view bringSubviewToFront:self.navEffectView];
-}
-
-#pragma mark - Config Views
-
-// 配置视图
-- (void)configView {
-    
-}
-
-// 约束布局
-- (void)configFrame {
-    
-}
-
-#pragma mark - Request Network
-
-// 请求网络
-- (void)requestNet {
-    
-}
-
-#pragma mark - Bind Action
-
-// 绑定操作
-- (void)bindAction {
-    
 }
 
 #pragma mark - Setter

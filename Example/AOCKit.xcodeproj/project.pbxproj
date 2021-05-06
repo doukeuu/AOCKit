@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5245479F263BD37200F85F6A /* AOCSecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5245479D263BD37100F85F6A /* AOCSecondController.m */; };
+		5279DB682643F0E400F918C6 /* EFABaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279DB672643F0E400F918C6 /* EFABaseController.m */; };
+		5279DB6D2643F0F900F918C6 /* EFANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279DB6C2643F0F900F918C6 /* EFANavigationController.m */; };
+		5279DB722643F10F00F918C6 /* EFATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279DB712643F10F00F918C6 /* EFATabBarController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* AOCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* AOCAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* AOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* AOCViewController.m */; };
+		6003F59E195388D20070C39A /* EFAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* EFAAppDelegate.m */; };
+		6003F5A7195388D20070C39A /* EFAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* EFAViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -43,8 +45,12 @@
 		28D89AF3BB612F378CFA56CD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3082CF2EDE4ED2159573CC40 /* Pods_AOCKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOCKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46241A8187EAAA0E5AD758F8 /* Pods_AOCKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOCKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5245479D263BD37100F85F6A /* AOCSecondController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOCSecondController.m; sourceTree = "<group>"; };
-		5245479E263BD37200F85F6A /* AOCSecondController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOCSecondController.h; sourceTree = "<group>"; };
+		5279DB662643F0E400F918C6 /* EFABaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFABaseController.h; sourceTree = "<group>"; };
+		5279DB672643F0E400F918C6 /* EFABaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFABaseController.m; sourceTree = "<group>"; };
+		5279DB6B2643F0F900F918C6 /* EFANavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFANavigationController.h; sourceTree = "<group>"; };
+		5279DB6C2643F0F900F918C6 /* EFANavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFANavigationController.m; sourceTree = "<group>"; };
+		5279DB702643F10F00F918C6 /* EFATabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFATabBarController.h; sourceTree = "<group>"; };
+		5279DB712643F10F00F918C6 /* EFATabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFATabBarController.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* AOCKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOCKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,10 +59,10 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* AOCKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOCKit-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* AOCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOCAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* AOCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOCAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* AOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOCViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* AOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOCViewController.m; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* EFAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFAAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* EFAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFAAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* EFAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFAViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* EFAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFAViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* AOCKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOCKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -98,6 +104,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5279DB602643F04F00F918C6 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				5279DB652643F0BC00F918C6 /* Basic */,
+			);
+			name = Module;
+			sourceTree = "<group>";
+		};
+		5279DB632643F07500F918C6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		5279DB642643F09F00F918C6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		5279DB652643F0BC00F918C6 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				5279DB662643F0E400F918C6 /* EFABaseController.h */,
+				5279DB672643F0E400F918C6 /* EFABaseController.m */,
+				5279DB6B2643F0F900F918C6 /* EFANavigationController.h */,
+				5279DB6C2643F0F900F918C6 /* EFANavigationController.m */,
+				5279DB702643F10F00F918C6 /* EFATabBarController.h */,
+				5279DB712643F10F00F918C6 /* EFATabBarController.m */,
+			);
+			name = Basic;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -135,12 +176,13 @@
 		6003F593195388D20070C39A /* Example for AOCKit */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* AOCAppDelegate.h */,
-				6003F59D195388D20070C39A /* AOCAppDelegate.m */,
-				6003F5A5195388D20070C39A /* AOCViewController.h */,
-				6003F5A6195388D20070C39A /* AOCViewController.m */,
-				5245479E263BD37200F85F6A /* AOCSecondController.h */,
-				5245479D263BD37100F85F6A /* AOCSecondController.m */,
+				6003F59C195388D20070C39A /* EFAAppDelegate.h */,
+				6003F59D195388D20070C39A /* EFAAppDelegate.m */,
+				6003F5A5195388D20070C39A /* EFAViewController.h */,
+				6003F5A6195388D20070C39A /* EFAViewController.m */,
+				5279DB642643F09F00F918C6 /* Common */,
+				5279DB602643F04F00F918C6 /* Module */,
+				5279DB632643F07500F918C6 /* Utility */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -248,7 +290,7 @@
 		6003F582195388D10070C39A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = AOC;
+				CLASSPREFIX = EFA;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = pan;
 				TargetAttributes = {
@@ -372,10 +414,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* AOCAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* AOCViewController.m in Sources */,
+				5279DB682643F0E400F918C6 /* EFABaseController.m in Sources */,
+				6003F59E195388D20070C39A /* EFAAppDelegate.m in Sources */,
+				6003F5A7195388D20070C39A /* EFAViewController.m in Sources */,
+				5279DB722643F10F00F918C6 /* EFATabBarController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				5245479F263BD37200F85F6A /* AOCSecondController.m in Sources */,
+				5279DB6D2643F0F900F918C6 /* EFANavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

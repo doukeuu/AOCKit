@@ -41,7 +41,7 @@
 
 #pragma mark - Style
 
-// 配置导航栏背景
+// 配置导航栏
 - (void)configNavigationBar {
     // 背景设置为透明图片
     UIImage *backImage = [UIImage imageFromColor:UIColor.clearColor];
@@ -55,10 +55,6 @@
     indicator = [indicator imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.navigationBar.backIndicatorImage = indicator;
     self.navigationBar.backIndicatorTransitionMaskImage = indicator;
-    
-    // 返回按钮文字移出屏幕
-    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-200, 0)
-                                                         forBarMetrics:UIBarMetricsDefault];
     
     // 标题样式
     NSShadow *shadow = [[NSShadow alloc] init];

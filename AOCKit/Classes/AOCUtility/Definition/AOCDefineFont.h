@@ -21,6 +21,8 @@
 
 // 导航栏字体大小
 #define kFONT_NAV_TITLE    FONT(18)
+// TabBar字体大小
+#define kFONT_TAB_TITLE    FONT(11)
 
 
 #endif /* AOCDefineFont_h */

@@ -23,17 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 导航栏标题色
 @property (nonatomic, strong, nullable) UIColor *navTitleColor;
 
-
-/// 初始化
-- (void)initConfig;
-/// 配置视图
-- (void)configView;
-/// 约束布局
-- (void)configFrame;
-/// 请求网络
-- (void)requestNet;
-/// 绑定操作
-- (void)bindAction;
 @end
 
 NS_ASSUME_NONNULL_END

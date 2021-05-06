@@ -1,21 +1,21 @@
 //
-//  AOCAppDelegate.m
+//  EFAAppDelegate.m
 //  AOCKit
 //
 //  Created by pan on 04/23/2021.
 //  Copyright (c) 2021 pan. All rights reserved.
 //
 
-#import "AOCAppDelegate.h"
-#import "AOCNavigationController.h"
-#import "AOCViewController.h"
+#import "EFAAppDelegate.h"
+#import "EFANavigationController.h"
+#import "EFATabBarController.h"
 
-@implementation AOCAppDelegate
+@implementation EFAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    AOCViewController *vc = [[AOCViewController alloc] init];
-    self.window.rootViewController = [[AOCNavigationController alloc] initWithRootViewController:vc];
+    EFATabBarController *vc = [[EFATabBarController alloc] init];
+    self.window.rootViewController = [[EFANavigationController alloc] initWithRootViewController:vc];
     [self.window makeKeyAndVisible];
     
     return YES;

@@ -1,5 +1,5 @@
 //
-//  AOCViewController.h
+//  EFAViewController.h
 //  AOCKit
 //
 //  Created by pan on 04/23/2021.
@@ -8,6 +8,6 @@
 
 #import "AOCBaseController.h"
 
-@interface AOCViewController : AOCBaseController
+@interface EFAViewController : AOCBaseController
 
 @end

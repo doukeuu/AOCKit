@@ -29,6 +29,18 @@
 #define kCOLOR_NAV_LINE     COLOR_RGB(222, 222, 222)
 
 
+#pragma mark - TabBar
+
+// TabBar标题颜色normal
+#define kCOLOR_TAB_TITLE_N    COLOR_HEX(0x333333)
+// TabBar标题颜色selected
+#define kCOLOR_TAB_TITLE_S    COLOR_HEX(0x333333)
+// TabBar背景色
+#define kCOLOR_TAB_BACK       COLOR_RGBA(234, 234, 234, 0.93)
+// TabBar背景色
+#define kCOLOR_TAB_LINE       COLOR_RGB(222, 222, 222)
+
+
 #pragma mark - View
 
 // 视图背景色

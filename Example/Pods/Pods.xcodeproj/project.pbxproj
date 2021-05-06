@@ -63,11 +63,11 @@
 /* Begin PBXFileReference section */
 		02976E923F92625890CE03509AD3E257 /* AOCKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AOCKit.release.xcconfig; sourceTree = "<group>"; };
 		055630CF743FF29E0650A3BF3304E696 /* AOCKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AOCKit-umbrella.h"; sourceTree = "<group>"; };
-		0D4EF956F133843CB47B80A1C547F3FE /* AOCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AOCKit.framework; path = AOCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4EF956F133843CB47B80A1C547F3FE /* AOCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AOCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFD5A5D773CBF768168979E0147B2A1 /* Pods-AOCKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AOCKit_Example-dummy.m"; sourceTree = "<group>"; };
 		0E597CADD521020C3AF09E888EC3D66D /* AOCTableController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCTableController.h; sourceTree = "<group>"; };
-		0ED3A241A69948DEB4BC5A0C3388F581 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		108389346E9407F8C447AF72DA96675A /* Pods_AOCKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AOCKit_Example.framework; path = "Pods-AOCKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED3A241A69948DEB4BC5A0C3388F581 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		108389346E9407F8C447AF72DA96675A /* Pods_AOCKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOCKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14028B337CE1F0149FF8964840331304 /* AOCBaseController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCBaseController.m; sourceTree = "<group>"; };
 		162463BF3FD3333C5E5FB798BFB5C362 /* AOCConstantKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCConstantKey.h; sourceTree = "<group>"; };
 		16674C0E2486AEF1FFC8BA0A492C7EAC /* AOCNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCNavigationController.m; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		1CD31CB236432FCCDC82237E86D05936 /* AOCKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AOCKit-prefix.pch"; sourceTree = "<group>"; };
 		1DD292C5A387CB352DC90290D7872946 /* Pods-AOCKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AOCKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1E0EF382D2B47ABB7B42E10794E69B8E /* Pods-AOCKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AOCKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		22145B43D6D0D3B051532A9309F977E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		22145B43D6D0D3B051532A9309F977E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		248A31CB10FB427C8C040C77C76E7AC2 /* AOCKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AOCKit.modulemap; sourceTree = "<group>"; };
 		29F63002D15ECBAB29215F0C8BAE0AA7 /* Pods-AOCKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AOCKit_Tests.modulemap"; sourceTree = "<group>"; };
 		2DF121290DEC81BD331C8F715E71D6A4 /* AOCKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AOCKit.debug.xcconfig; sourceTree = "<group>"; };
@@ -104,16 +104,16 @@
 		88908836C7D1BC955206AB646929C694 /* AOCTableController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCTableController.m; sourceTree = "<group>"; };
 		8927FC3C5E6EA1F3CFD8218F17B9D06C /* AOCDefineSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCDefineSize.h; sourceTree = "<group>"; };
 		8B100A5CD9F8CFD26EB16E5C08F5A03E /* AOCKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AOCKit-Info.plist"; sourceTree = "<group>"; };
-		8BB4F60E74240A59FEFFA9765F527EB1 /* Pods_AOCKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AOCKit_Tests.framework; path = "Pods-AOCKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB4F60E74240A59FEFFA9765F527EB1 /* Pods_AOCKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOCKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED2AC96B1975F5A638A8DA405F2F399 /* Pods-AOCKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AOCKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		90950451665B4AB0916A3DAE6881A6C8 /* AOCWebController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCWebController.m; sourceTree = "<group>"; };
 		954CA8638020DD37E3025C1349F618F6 /* Pods-AOCKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AOCKit_Example-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3397D7CF98A4828F6C59AEE9D0BD675 /* Pods-AOCKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AOCKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A752995466A0DDF283C8198895C98A0D /* Pods-AOCKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AOCKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A7FB1A7D9B6900A9941B43D8E49EA8B2 /* Pods-AOCKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AOCKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BBFADFC5B5B6167E6BAB4051DA8CF41C /* Pods-AOCKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AOCKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CC5669A0A98F839FC7321431F64CAD77 /* AOCKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AOCKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CC5669A0A98F839FC7321431F64CAD77 /* AOCKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AOCKit.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		CCD1A8D3F1FFE0DA8D72B957F149B0FC /* Pods-AOCKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AOCKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D0980AAAB0A5ECADECD0B1110589263F /* AOCConstantKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AOCConstantKey.m; sourceTree = "<group>"; };
 		E126F5A1DA02E7C1727662C8E7781F42 /* AOCDefineKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCDefineKey.h; sourceTree = "<group>"; };
@@ -214,7 +214,6 @@
 				55CF01E93E5B353807E29C82DDE6279B /* UIImage+AOC.h */,
 				4E0E87416849991C78F6524B4C643571 /* UIImage+AOC.m */,
 			);
-			name = UI;
 			path = UI;
 			sourceTree = "<group>";
 		};
@@ -224,7 +223,6 @@
 				5E420CB63581FDB1BFD34081280ECE73 /* NSBundle+AOC.h */,
 				5B4ED0BD7CF43AF1DCC3F4E882F7FD76 /* NSBundle+AOC.m */,
 			);
-			name = NS;
 			path = NS;
 			sourceTree = "<group>";
 		};
@@ -309,7 +307,6 @@
 				7AE319FEC46FF1D152FBAE2AD6FC7791 /* NS */,
 				7A8775C10A98991E8DEF3586D5DF4AFA /* UI */,
 			);
-			name = Category;
 			path = Category;
 			sourceTree = "<group>";
 		};
@@ -325,7 +322,6 @@
 				8927FC3C5E6EA1F3CFD8218F17B9D06C /* AOCDefineSize.h */,
 				82CFF148A061099A4C56F3D44B56330F /* AOCEnumeration.h */,
 			);
-			name = Definition;
 			path = Definition;
 			sourceTree = "<group>";
 		};
@@ -353,7 +349,6 @@
 				4E3CDC772B6EF3E1955C95BB1E087028 /* AOCWebController.h */,
 				90950451665B4AB0916A3DAE6881A6C8 /* AOCWebController.m */,
 			);
-			name = Basic;
 			path = Basic;
 			sourceTree = "<group>";
 		};
@@ -756,8 +751,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
