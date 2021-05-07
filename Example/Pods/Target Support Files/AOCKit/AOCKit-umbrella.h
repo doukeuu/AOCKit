@@ -10,13 +10,14 @@
 #endif
 #endif
 
-#import "AOCBaseController.h"
+#import "AOCViewController.h"
 #import "AOCCollectionController.h"
 #import "AOCNavigationController.h"
 #import "AOCTabBarController.h"
 #import "AOCTableController.h"
 #import "AOCWebController.h"
 #import "NSBundle+AOC.h"
+#import "UIBarButtonItem+AOC.h"
 #import "UIImage+AOC.h"
 #import "AOCConstantKey.h"
 #import "AOCDefineColor.h"
@@ -25,6 +26,10 @@
 #import "AOCDefineKey.h"
 #import "AOCDefineSize.h"
 #import "AOCEnumeration.h"
+#import "AOCTableViewCell.h"
+#import "AOCView.h"
+#import "AOCHandler.h"
+#import "AOCModel.h"
 
 FOUNDATION_EXPORT double AOCKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char AOCKitVersionString[];

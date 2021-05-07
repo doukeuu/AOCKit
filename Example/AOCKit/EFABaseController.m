@@ -46,10 +46,10 @@
     Class secondClass = NSClassFromString(@"EFABaseController");
     id second = [[secondClass alloc] init];
     
-    UINavigationController *rootVC = (UINavigationController *)[[UIApplication sharedApplication].delegate window].rootViewController;
-    [rootVC pushViewController:second animated:YES];
+//    UINavigationController *rootVC = (UINavigationController *)[[UIApplication sharedApplication].delegate window].rootViewController;
+//    [rootVC pushViewController:second animated:YES];
     
-//    [self.navigationController pushViewController:second animated:YES];
+    [self.navigationController pushViewController:second animated:YES];
 }
 
 @end

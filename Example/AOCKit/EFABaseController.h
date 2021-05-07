@@ -6,11 +6,11 @@
 //  Copyright © 2021 pan. All rights reserved.
 //
 
-#import <AOCKit/AOCBaseController.h>
+#import <AOCKit/AOCViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface EFABaseController : AOCBaseController
+@interface EFABaseController : AOCViewController
 
 @end
 

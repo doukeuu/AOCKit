@@ -19,5 +19,13 @@
     "ios": "9.0"
   },
   "source_files": "AOCKit/Classes/**/*",
-  "resources": "AOCKit/Assets/AOCImage.bundle"
+  "resources": "AOCKit/Assets/AOCImage.bundle",
+  "dependencies": {
+    "AFNetworking": [
+      "4.0.1"
+    ],
+    "MJExtension": [
+      "3.2.4"
+    ]
+  }
 }

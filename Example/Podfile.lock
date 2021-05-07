@@ -1,15 +1,40 @@
 PODS:
-  - AOCKit (0.1.0)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - AOCKit (0.1.0):
+    - AFNetworking (= 4.0.1)
+    - MJExtension (= 3.2.4)
+  - MJExtension (3.2.4)
 
 DEPENDENCIES:
   - AOCKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - MJExtension
 
 EXTERNAL SOURCES:
   AOCKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AOCKit: 9c091f1debf9fef7dbfba4052925a52f34e4ea6c
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AOCKit: ecaa10b7171f4172c6892bfaee78119578e18ecb
+  MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
 
 PODFILE CHECKSUM: 860a5eea15a3990ffb5b901c9e59deae01600ddf
 

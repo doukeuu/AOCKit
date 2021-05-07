@@ -1,15 +1,15 @@
 //
-//  AOCBaseController.h
+//  AOCViewController.h
 //  AOCKit
 //
-//  Created by ssbm on 2021/4/23.
+//  Created by ssbm on 2021/5/7.
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AOCBaseController : UIViewController
+@interface AOCViewController : UIViewController
 
 /// 导航栏位置背景模糊视图
 @property (nonatomic, strong) UIVisualEffectView *navEffectView;
@@ -22,7 +22,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 导航栏标题色
 @property (nonatomic, strong, nullable) UIColor *navTitleColor;
-
 @end
 
 NS_ASSUME_NONNULL_END

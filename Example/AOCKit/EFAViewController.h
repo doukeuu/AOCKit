@@ -6,8 +6,8 @@
 //  Copyright (c) 2021 pan. All rights reserved.
 //
 
-#import "AOCBaseController.h"
+#import "EFABaseController.h"
 
-@interface EFAViewController : AOCBaseController
+@interface EFAViewController : EFABaseController
 
 @end

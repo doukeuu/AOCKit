@@ -1,20 +1,20 @@
 //
-//  AOCBaseController.m
+//  AOCViewController.m
 //  AOCKit
 //
-//  Created by ssbm on 2021/4/23.
+//  Created by ssbm on 2021/5/7.
 //
 
-#import "AOCBaseController.h"
+#import "AOCViewController.h"
 #import "AOCNavigationController.h"
 #import "AOCDefineColor.h"
 #import "AOCDefineSize.h"
 
-@interface AOCBaseController ()
+@interface AOCViewController ()
 
 @end
 
-@implementation AOCBaseController
+@implementation AOCViewController
 
 #pragma mark - Life Cycle
 
