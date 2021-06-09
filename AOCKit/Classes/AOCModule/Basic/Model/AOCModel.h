@@ -25,6 +25,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// 字典中的key是数组属性名，value是数组中存放模型的Class（Class类型或者NSString类型），子类重写
 + (NSDictionary *)objectClassInArray;
 
+#pragma mark - Property Key
+
+/// 获取所有的属性字段
++ (NSArray *)getAllPropertyKeys;
+/// 从另一个数据类中拷贝属性值
+- (void)copyValueFromModel:(AOCModel *)original;
+/// 判断内容是否相等，仅支持全基础类型属性
+- (BOOL)isEqualToModel:(AOCModel *)original;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

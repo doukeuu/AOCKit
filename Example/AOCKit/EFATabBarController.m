@@ -9,6 +9,7 @@
 #import "EFATabBarController.h"
 #import "EFAViewController.h"
 #import "EFANavigationController.h"
+#import <AOCKit/AOCBuldgeTabBar.h>
 
 @interface EFATabBarController ()
 
@@ -31,6 +32,13 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     
     NSLog(@" ---- %@ --  %@", [self class], self.navigationController.navigationBar);
+}
+
+// 配置自定义TabBar
+- (void)generateTabBar {
+    AOCBuldgeTabBar *bulge = [[AOCBuldgeTabBar alloc] init];
+    bulge.backgroundImage = [UIImage imageNamed:@"sy_tab_bj_png"];
+    [self setValue:bulge forKey:@"tabBar"];
 }
 
 @end

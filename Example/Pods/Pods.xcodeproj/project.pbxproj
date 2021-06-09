@@ -58,6 +58,14 @@
 		5276CEAE26457B2300B57ABA /* AOCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276CEAC26457B2300B57ABA /* AOCHandler.m */; };
 		5276CEC026457B3500B57ABA /* AOCModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5276CEBE26457B3500B57ABA /* AOCModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5276CEC126457B3500B57ABA /* AOCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276CEBF26457B3500B57ABA /* AOCModel.m */; };
+		5276CEFD2645848800B57ABA /* AOCBuldgeTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5276CEFB2645848800B57ABA /* AOCBuldgeTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5276CEFE2645848800B57ABA /* AOCBuldgeTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276CEFC2645848800B57ABA /* AOCBuldgeTabBar.m */; };
+		5276CF132646896F00B57ABA /* AOCNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5276CF112646896F00B57ABA /* AOCNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5276CF142646896F00B57ABA /* AOCNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276CF122646896F00B57ABA /* AOCNetworkManager.m */; };
+		5276CF21264689A400B57ABA /* AOCNetworkConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5276CF1F264689A400B57ABA /* AOCNetworkConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5276CF22264689A400B57ABA /* AOCNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276CF20264689A400B57ABA /* AOCNetworkConfig.m */; };
+		5276CF2F26468A1200B57ABA /* AOCNetworkConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 5276CF2D26468A1200B57ABA /* AOCNetworkConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5276CF3026468A1200B57ABA /* AOCNetworkConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5276CF2E26468A1200B57ABA /* AOCNetworkConstant.m */; };
 		57B388B83DE6F0992D044465CAE5972C /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D230E583DEFFFC0182E902D87EABB9A3 /* NSString+MJExtension.m */; };
 		60D903CC698034423235AE17DA4EC471 /* AOCConstantKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 162463BF3FD3333C5E5FB798BFB5C362 /* AOCConstantKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		618C118824BC8447C5F2A1307A32BEA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA0BD510DA61F5D01E9F7FEEBB6073B /* Foundation.framework */; };
@@ -217,6 +225,14 @@
 		5276CEAC26457B2300B57ABA /* AOCHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOCHandler.m; sourceTree = "<group>"; };
 		5276CEBE26457B3500B57ABA /* AOCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOCModel.h; sourceTree = "<group>"; };
 		5276CEBF26457B3500B57ABA /* AOCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOCModel.m; sourceTree = "<group>"; };
+		5276CEFB2645848800B57ABA /* AOCBuldgeTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOCBuldgeTabBar.h; sourceTree = "<group>"; };
+		5276CEFC2645848800B57ABA /* AOCBuldgeTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOCBuldgeTabBar.m; sourceTree = "<group>"; };
+		5276CF112646896F00B57ABA /* AOCNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOCNetworkManager.h; sourceTree = "<group>"; };
+		5276CF122646896F00B57ABA /* AOCNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOCNetworkManager.m; sourceTree = "<group>"; };
+		5276CF1F264689A400B57ABA /* AOCNetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOCNetworkConfig.h; sourceTree = "<group>"; };
+		5276CF20264689A400B57ABA /* AOCNetworkConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOCNetworkConfig.m; sourceTree = "<group>"; };
+		5276CF2D26468A1200B57ABA /* AOCNetworkConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOCNetworkConstant.h; sourceTree = "<group>"; };
+		5276CF2E26468A1200B57ABA /* AOCNetworkConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOCNetworkConstant.m; sourceTree = "<group>"; };
 		53D3B9CBB2B29D48164BF1A71156D4F8 /* MJPropertyType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyType.m; path = MJExtension/MJPropertyType.m; sourceTree = "<group>"; };
 		5B0133AEB9805F9445C1ABF8698AB713 /* AOCDefineFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AOCDefineFont.h; sourceTree = "<group>"; };
 		5BA951650A2C7CD92758C0BDC9C46BB1 /* MJExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MJExtension-Info.plist"; sourceTree = "<group>"; };
@@ -449,6 +465,7 @@
 			isa = PBXGroup;
 			children = (
 				25C98B9046100CB6AB321C80BD79C05E /* Basic */,
+				5276CF102646888900B57ABA /* Network */,
 			);
 			name = AOCModule;
 			path = AOCKit/Classes/AOCModule;
@@ -514,12 +531,27 @@
 		5276CE2E2645706200B57ABA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5276CEFB2645848800B57ABA /* AOCBuldgeTabBar.h */,
+				5276CEFC2645848800B57ABA /* AOCBuldgeTabBar.m */,
 				5276CE8126457A4400B57ABA /* AOCTableViewCell.h */,
 				5276CE8226457A4400B57ABA /* AOCTableViewCell.m */,
 				5276CE9826457AED00B57ABA /* AOCView.h */,
 				5276CE9926457AED00B57ABA /* AOCView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5276CF102646888900B57ABA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5276CF1F264689A400B57ABA /* AOCNetworkConfig.h */,
+				5276CF20264689A400B57ABA /* AOCNetworkConfig.m */,
+				5276CF2D26468A1200B57ABA /* AOCNetworkConstant.h */,
+				5276CF2E26468A1200B57ABA /* AOCNetworkConstant.m */,
+				5276CF112646896F00B57ABA /* AOCNetworkManager.h */,
+				5276CF122646896F00B57ABA /* AOCNetworkManager.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		5279DBD22644577600F918C6 /* Handler */ = {
@@ -781,6 +813,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15F1D3E8EE6D9F7F081DC7CFEA1AB190 /* AOCCollectionController.h in Headers */,
+				5276CF132646896F00B57ABA /* AOCNetworkManager.h in Headers */,
 				60D903CC698034423235AE17DA4EC471 /* AOCConstantKey.h in Headers */,
 				2C5169599E0BD8B051967DFCCF125E51 /* AOCDefineColor.h in Headers */,
 				C796555AA795BFE6082C1CD0E6D41027 /* AOCDefineFont.h in Headers */,
@@ -789,6 +822,7 @@
 				B9BC32369B8D4B99BEA464CF9D748307 /* AOCDefineKey.h in Headers */,
 				4ADAC01E30E45F8C29DF488A5D04E136 /* AOCDefineSize.h in Headers */,
 				5276CE8326457A4400B57ABA /* AOCTableViewCell.h in Headers */,
+				5276CEFD2645848800B57ABA /* AOCBuldgeTabBar.h in Headers */,
 				51325961808C831A14172A0F9B7E05B2 /* AOCEnumeration.h in Headers */,
 				0FDD1DD8AA8EFF3AFC7FEB9DFC0DD0C2 /* AOCKit-umbrella.h in Headers */,
 				5276CEC026457B3500B57ABA /* AOCModel.h in Headers */,
@@ -797,9 +831,11 @@
 				40BB991BEAC0031CB1166732FA5D4964 /* AOCTabBarController.h in Headers */,
 				4189CF8E5B1EE75EACCE2F56EF7113ED /* AOCTableController.h in Headers */,
 				2AF098316D10B0EEBF3D936C79D33D6C /* AOCWebController.h in Headers */,
+				5276CF21264689A400B57ABA /* AOCNetworkConfig.h in Headers */,
 				EA8E6CFCCA1B203FAEC80DCD9B677DC3 /* NSBundle+AOC.h in Headers */,
 				7D0B5990DF89F65411D8BBF93B5E08DC /* UIBarButtonItem+AOC.h in Headers */,
 				5276CE8C26457A6D00B57ABA /* AOCViewController.h in Headers */,
+				5276CF2F26468A1200B57ABA /* AOCNetworkConstant.h in Headers */,
 				AC22714FD84E220C426EF26BB6B0FB93 /* UIImage+AOC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1026,6 +1062,7 @@
 				5276CE8D26457A6D00B57ABA /* AOCViewController.m in Sources */,
 				5276CE9B26457AED00B57ABA /* AOCView.m in Sources */,
 				1FA719FEE1D043731EE662F8CD636DB8 /* AOCCollectionController.m in Sources */,
+				5276CF142646896F00B57ABA /* AOCNetworkManager.m in Sources */,
 				820D3A3C9937C914A50825F2AB666BBB /* AOCConstantKey.m in Sources */,
 				BDFFD8D2DA71ACFD885C902DF699DF68 /* AOCKit-dummy.m in Sources */,
 				BB505F5E298B7E5D339976F3792886EF /* AOCNavigationController.m in Sources */,
@@ -1036,7 +1073,10 @@
 				17DD6BB507704E4A1EC56F3BEE361185 /* AOCWebController.m in Sources */,
 				906C9F182557E02C21ED4DED372595F6 /* NSBundle+AOC.m in Sources */,
 				26146BE22CC294A8D70EEA7794024F96 /* UIBarButtonItem+AOC.m in Sources */,
+				5276CF22264689A400B57ABA /* AOCNetworkConfig.m in Sources */,
 				C88815D06FC61A6A8423350FC727BE51 /* UIImage+AOC.m in Sources */,
+				5276CEFE2645848800B57ABA /* AOCBuldgeTabBar.m in Sources */,
+				5276CF3026468A1200B57ABA /* AOCNetworkConstant.m in Sources */,
 				5276CE8426457A4400B57ABA /* AOCTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

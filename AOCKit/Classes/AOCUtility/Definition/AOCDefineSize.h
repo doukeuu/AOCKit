@@ -27,9 +27,9 @@
 #pragma mark - Custom
 
 // 适配尺寸
-#define kSCREEN_RATIO       (SCREEN_WIDTH / 375.0)
-#define kSCREEN_FIT_W(x)    (SCREEN_WIDTH / 375.0 * (x))
-#define kSCREEN_FIT_H(x)    (SCREEN_HEIGHT / 667.0 * (x))
+#define SCREEN_RATIO       (SCREEN_WIDTH / 375.0)
+#define SCREEN_FIT_W(x)    (SCREEN_WIDTH / 375.0 * (x))
+#define SCREEN_FIT_H(x)    (SCREEN_HEIGHT / 667.0 * (x))
 
 
 

@@ -30,6 +30,7 @@
 #import "AOCView.h"
 #import "AOCHandler.h"
 #import "AOCModel.h"
+#import "AOCBuldgeTabBar.h"
 
 FOUNDATION_EXPORT double AOCKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char AOCKitVersionString[];
