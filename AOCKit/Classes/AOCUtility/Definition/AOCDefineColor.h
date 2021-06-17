@@ -54,6 +54,7 @@
 #define kCOLOR_666    COLOR_HEX(0x666666)
 #define kCOLOR_999    COLOR_HEX(0x999999)
 #define kCOLOR_fff    COLOR_HEX(0xffffff)
+#define kCOLOR_LINE   COLOR_HEX(0xf0f0f0)
 
 
 #endif /* AOCDefineColor_h */

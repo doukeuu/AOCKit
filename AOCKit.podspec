@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                        A kit with test
                        DESC
 
   s.homepage         = 'https://github.com/doukeuu/AOCKit'
@@ -42,6 +42,7 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   
   s.dependency 'AFNetworking', '4.0.1'
+  s.dependency 'Masonry',      '1.1.0'
   s.dependency 'MJExtension',  '3.2.4'
   
 end

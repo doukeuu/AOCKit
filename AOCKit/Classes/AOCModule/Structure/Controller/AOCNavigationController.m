@@ -9,7 +9,7 @@
 #import "AOCDefineFont.h"
 #import "AOCDefineColor.h"
 #import "UIImage+AOC.h"
-#import "NSBundle+AOC.h"
+#import "UIImage+Kit.h"
 
 @interface AOCNavigationController () <UIGestureRecognizerDelegate>
 
@@ -49,10 +49,7 @@
     [self.navigationBar setBackgroundImage:backImage forBarMetrics:UIBarMetricsDefault];
         
     // 返回按钮样式
-    UIImage *indicator = [UIImage imageNamed:@"arrow_back_black"
-                                    inBundle:[NSBundle aocBundle]
-               compatibleWithTraitCollection:nil];
-    indicator = [indicator imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *indicator = [UIImage imageInBundleNamed:@"arrow_back_black"];
     self.navigationBar.backIndicatorImage = indicator;
     self.navigationBar.backIndicatorTransitionMaskImage = indicator;
     

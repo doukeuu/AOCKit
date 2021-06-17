@@ -33,8 +33,8 @@
                compatibleWithTraitCollection:nil];
     indicator = [indicator imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UIBarButtonItem *backItem = [UIBarButtonItem backItemWithImage:indicator
-                                                            action:@selector(clickBackItem)
-                                                            target:self];
+                                                            target:self
+                                                            action:@selector(clickBackItem)];
     self.navigationItem.backBarButtonItem = backItem;
     
     // 导航栏进度条
