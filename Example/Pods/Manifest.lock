@@ -16,7 +16,9 @@ PODS:
     - AFNetworking/NSURLSession
   - AOCKit (0.1.0):
     - AFNetworking (= 4.0.1)
+    - Masonry (= 1.1.0)
     - MJExtension (= 3.2.4)
+  - Masonry (1.1.0)
   - MJExtension (3.2.4)
 
 DEPENDENCIES:
@@ -25,6 +27,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - Masonry
     - MJExtension
 
 EXTERNAL SOURCES:
@@ -33,7 +36,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  AOCKit: ecaa10b7171f4172c6892bfaee78119578e18ecb
+  AOCKit: b4e62fa0835183f98797e2e50bcadbbdb7241376
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
 
 PODFILE CHECKSUM: 860a5eea15a3990ffb5b901c9e59deae01600ddf
