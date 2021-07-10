@@ -190,15 +190,15 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D3BA58D0583DF37575CACAB3DDADC85;
-			remoteInfo = MJExtension;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
 		};
 		1653F39ABD568438A8A4C12CE4C1C6C2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
-			remoteInfo = AFNetworking;
+			remoteGlobalIDString = 4D3BA58D0583DF37575CACAB3DDADC85;
+			remoteInfo = MJExtension;
 		};
 		7A6E466D87093C87963919FB9BDF26A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -571,8 +571,8 @@
 				853B56448A5058383B1B887FD1C50023 /* AOCKit.debug.xcconfig */,
 				714A17883FCFF2F0C7F513C92D1AF630 /* AOCKit.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AOCKit";
+			name = AOCKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		4108501919E3A8CDDC8CB39B39A29DD0 /* Model */ = {
@@ -632,7 +632,8 @@
 				305BFF2D6BCCAE094C2B416E8BE94749 /* AFNetworkReachabilityManager.h */,
 				E1B2DC45E7EC28C31A8FDCD21615BA93 /* AFNetworkReachabilityManager.m */,
 			);
-			name = Reachability;
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
 		5AEAF8D6A683B9C113A004D7710E5FAF /* Support Files */ = {
@@ -828,6 +829,50 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		909B07A1FDB270723663644DB55CA29F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E27AEB0F9A2880761C0B52744681D899 /* AFNetworking */,
+				F3A4281E7FD6169FC23B2FB52325B179 /* Masonry */,
+				833E1FED722D409C26E2AA32A6E05181 /* MJExtension */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9603669580109B21AB663B99B480FB29 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				07FD61AFA98C5D2D4876901E2C57E707 /* AOCKit.podspec */,
+				F24E5A2C7947D9060790793145A174ED /* LICENSE */,
+				AA6813F54D6D87BEEBCDE2EB4540D402 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9742B6E325F439FAF7B3AABFC68A631B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				020D23C26618569FF3160EB5C7534845 /* AOCKit.modulemap */,
+				B7C08D8E517D9B45C5AC9DBDDD86B6AF /* AOCKit-dummy.m */,
+				1DC9B6F12E3E24A8C752BDFB65888B59 /* AOCKit-Info.plist */,
+				CB983CBE1A8EBBA35D7D87186149ED9B /* AOCKit-prefix.pch */,
+				C756B3FA6EC8F9F23440D9130E5F5C5B /* AOCKit-umbrella.h */,
+				308359980E3A103C8D4F026F201A1B29 /* AOCKit.debug.xcconfig */,
+				70958FAD4C18CA9BDD9551E32E720C17 /* AOCKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AOCKit";
+			sourceTree = "<group>";
+		};
+		A094A816E04E4A780759AAB17DE1E197 /* AOCCommon */ = {
+			isa = PBXGroup;
+			children = (
+				E4CE1D022270AC2E56142AFD672B81B8 /* View */,
+			);
+			name = AOCCommon;
+			path = AOCKit/Classes/AOCCommon;
+			sourceTree = "<group>";
+		};
 		A26DCD0DA3CFDE1A3790BF55743098A9 /* Pods-AOCKit_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -929,7 +974,7 @@
 			path = Basic;
 			sourceTree = "<group>";
 		};
-		CF1408CF629C7361332E53B88F7BD30C = {
+		E0C83147951A06E0571535457A0FD821 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
@@ -939,6 +984,7 @@
 				BE7BB434E09987929B620521AB329FBC /* Products */,
 				38A913EABAA84D003C1064105BABD697 /* Targets Support Files */,
 			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D0CA283ED1FB9F6B5800B04DCA415C3D /* Controller */ = {
@@ -1217,6 +1263,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB878F004EA5314C19D69BC9FD60A26B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743E11D42E87DA6AD15A0006544802E7 /* Pods-AOCKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5BB354E4D1CE79E8E759E3B57B00865 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9D5CAA3F513AF58FD463246B43C29D /* AOCAnimationView.h in Headers */,
+				78DC441E8E9E149CDA64B7D6E23859C1 /* AOCBuldgeTabBar.h in Headers */,
+				16B5ACCDD5A96F12D6B79602A43E4483 /* AOCCollectionController.h in Headers */,
+				66DAC9262CBA73B5302ACE07C436F7EF /* AOCCommonView.h in Headers */,
+				0FC08C385208F3A8C2B46F565E1A9865 /* AOCConstantKey.h in Headers */,
+				9EEDF7EC77C2BD7B9A7E7DB31E2A21FD /* AOCDatePickerView.h in Headers */,
+				581093487E8966D04E347265CDA5222E /* AOCDefineColor.h in Headers */,
+				C000AA2F1DFCBC9D7097415730CBC71D /* AOCDefineFont.h in Headers */,
+				9439439F87A92958EE3F88CDAEB02F76 /* AOCDefineFunc.h in Headers */,
+				4AAFA7BF9EEA2042BBDC65EB4ABC0607 /* AOCDefineKey.h in Headers */,
+				A432531191E789DA664302C8A0683903 /* AOCDefineSize.h in Headers */,
+				77433F9C68772A4D1C4023C329016C12 /* AOCDevice.h in Headers */,
+				754784C3F7E0B764C0CB129D75B792F8 /* AOCEnumeration.h in Headers */,
+				B2732AD73D4A320867A6926FE29C56D7 /* AOCHandler.h in Headers */,
+				69B3A40C46EC30CA19F4BCEDE79EF015 /* AOCKit-umbrella.h in Headers */,
+				DDE0C31B81432F78B16AE144C123AFA5 /* AOCModel.h in Headers */,
+				44668B813D628BB42EAFFD9D74AF99FB /* AOCModuleBasic.h in Headers */,
+				8D10CDE39FF600D76450CDDBAF41347D /* AOCModuleNetwork.h in Headers */,
+				BE59BB7E9B2FC266108206FFEC0D2FAD /* AOCModuleStructure.h in Headers */,
+				67A54DE56E780F40529E143065B7E838 /* AOCNavigationController.h in Headers */,
+				BEF7C3E01566AEB1184C4DF488B0CF02 /* AOCNetworkConfig.h in Headers */,
+				691D10A9DD6F66DF3F91F91AD30285D4 /* AOCNetworkConstant.h in Headers */,
+				8DE5FF40D27B53DE51C538E398621765 /* AOCNetworkManager.h in Headers */,
+				AAAD43D7D0C105E13387740FE4DB69FD /* AOCNormalTableCell.h in Headers */,
+				B6CE9F93AA4095159EF12482669B6EC5 /* AOCTabBarController.h in Headers */,
+				3B5B9B982650A681FCB2529F97654A21 /* AOCTableController.h in Headers */,
+				EE46CDF5AFAD30A973F48AAD2F16F65A /* AOCTableView.h in Headers */,
+				593739D12C5376CA726D0F23AF68764F /* AOCTableViewCell.h in Headers */,
+				78CB540F98D17611B3DB94D8F9EEBF86 /* AOCTextFieldTableCell.h in Headers */,
+				59B30653DBE802A6FF31C6ECCED2F3B8 /* AOCUtilityCategory.h in Headers */,
+				1733EB35CB3FBA5D8F71B60A8B30EEF9 /* AOCUtilityDefinition.h in Headers */,
+				CF181E0DF7FB74CCAC8C089ABD38801A /* AOCUtilityTools.h in Headers */,
+				7CA1B04714262E88AA2E5940F7483CC8 /* AOCView.h in Headers */,
+				79A811BD48170E192ED11666AC86CAA5 /* AOCViewController.h in Headers */,
+				5B4116724DB3BC63BE4FD21898401C6B /* AOCWebController.h in Headers */,
+				3ECEAA15FA0C23F4F1704BE805BCF33A /* NSBundle+AOC.h in Headers */,
+				9432FBFA019ADD76B5A915DE2CD9C5A9 /* UIBarButtonItem+AOC.h in Headers */,
+				C170665DD6E9FB9B8A432023078FD90D /* UIButton+AOC.h in Headers */,
+				450D9967419E39023E26F7CD26BF40F8 /* UIImage+AOC.h in Headers */,
+				E29E7B14844A97E191A7E5B9C70888B9 /* UIImage+Kit.h in Headers */,
+				56C1964A8B465242A91A29AF0339B26D /* UIView+AOC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1409,6 +1511,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57880564469FBFC02F2E7EB39197E633 /* AOCImage.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1594,7 +1697,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
 				PRODUCT_MODULE_NAME = AFNetworking;
@@ -1655,7 +1758,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-AOCKit_Example/Pods-AOCKit_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AOCKit_Example/Pods-AOCKit_Example.modulemap";
@@ -1792,8 +1895,6 @@
 				PRODUCT_NAME = MJExtension;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1857,6 +1958,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1917,8 +2020,6 @@
 				PRODUCT_NAME = AOCKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1952,11 +2053,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		C138767EA985C88B8C19A5FA22E0DD84 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2120,7 +2220,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4A4B40CB38ADC88749D1E1C8A945364 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+		C3EFC74F07BB6645D9D9E497C913E074 /* Build configuration list for PBXNativeTarget "MJExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C902209175D85304A5115B511928021 /* Debug */,
