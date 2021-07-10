@@ -8,7 +8,7 @@
 #import "AOCModel.h"
 #import <MJExtension/MJExtension.h>
 
-@interface AOCModel ()
+@interface AOCModel () <NSCoding>
 
 @property (nonatomic, strong) NSArray *propertyKeyArray; // 属性字段数组
 @end
@@ -35,12 +35,12 @@
     return @{};
 }
 
-// 重写MJExtension方法
+// 实现MJKeyValue协议方法
 + (NSDictionary *)mj_replacedKeyFromPropertyName {
     return [self replacedKeyFromPropertyName];
 }
 
-// 重写MJExtension方法
+// 实现MJKeyValue协议方法
 + (NSDictionary *)mj_objectClassInArray {
     return [self objectClassInArray];
 }
@@ -85,6 +85,30 @@
         }
     }
     return YES;
+}
+
+#pragma mark - Encoding
+
+MJExtensionCodingImplementation
+
+// 数组中的属性名才会进行归档
++ (NSArray *)allowedCodingPropertyNames {
+    return @[];
+}
+
+// 数组中的属性名将会被忽略：不进行归档
++ (NSArray *)ignoredCodingPropertyNames {
+    return @[];
+}
+
+// 实现MJCoding协议方法
++ (NSArray *)mj_allowedCodingPropertyNames {
+    return [self allowedCodingPropertyNames];
+}
+
+// 实现MJCoding协议方法
++ (NSArray *)mj_ignoredCodingPropertyNames {
+    return [self ignoredCodingPropertyNames];
 }
 
 @end

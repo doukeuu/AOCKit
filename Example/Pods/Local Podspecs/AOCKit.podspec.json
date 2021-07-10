@@ -2,7 +2,7 @@
   "name": "AOCKit",
   "version": "0.1.0",
   "summary": "A short description of AOCKit.",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "A kit with test",
   "homepage": "https://github.com/doukeuu/AOCKit",
   "license": {
     "type": "MIT",
@@ -23,6 +23,9 @@
   "dependencies": {
     "AFNetworking": [
       "4.0.1"
+    ],
+    "Masonry": [
+      "1.1.0"
     ],
     "MJExtension": [
       "3.2.4"

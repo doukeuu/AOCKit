@@ -29,12 +29,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 获取所有的属性字段
 + (NSArray *)getAllPropertyKeys;
+
 /// 从另一个数据类中拷贝属性值
 - (void)copyValueFromModel:(AOCModel *)original;
+
 /// 判断内容是否相等，仅支持全基础类型属性
 - (BOOL)isEqualToModel:(AOCModel *)original;
 
+#pragma mark - Encoding
 
+/// 数组中的属性名才会进行归档，子类重写
++ (NSArray *)allowedCodingPropertyNames;
+
+/// 数组中的属性名将会被忽略，不进行归档，子类重写
++ (NSArray *)ignoredCodingPropertyNames;
 @end
 
 NS_ASSUME_NONNULL_END
