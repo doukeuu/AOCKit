@@ -36,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 /// 输入响应代理方法，text：输入的字符串，indexPath：单元格下标
 - (void)textFieldTableCell:(AOCTextFieldTableCell *)cell didInput:(NSString *)text atIndex:(NSIndexPath *)indexPath;
+
 /// 点击按钮响应方法，indexPath：单元格下标
 - (void)textFieldTableCell:(AOCTextFieldTableCell *)cell didClickAt:(NSIndexPath *)indexPath;
 @end
