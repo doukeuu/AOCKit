@@ -15,6 +15,7 @@
     return [[AOCNetworkConfig alloc] initWithUrlPath:[apiUrlString copy]];
 }
 
+// 根据接口路径配置
 - (instancetype)initWithUrlPath:(NSString *)urlPath {
     if (self = [super init]) {
         self.urlPath = urlPath;
@@ -25,40 +26,16 @@
     return self;
 }
 
-- (instancetype)initWithUrlPath:(NSString *)urlPath
-                     methodType:(AOCHTTPMethodType)methodType {
-    if (self = [super init]) {
-        self.urlPath = urlPath;
-        self.methodType = methodType;
-        self.requestType = AOCRequestSerializerTypeJSON;
-        self.responseType = AOCResponseSerializerTypeJSON;
+// 请求方法类型字符串
+- (NSString *)methodName {
+    switch (self.methodType) {
+        case AOCHTTPMethodGET:    return @"GET";
+        case AOCHTTPMethodPOST:   return @"POST";
+        case AOCHTTPMethodPUT:    return @"PUT";
+        case AOCHTTPMethodPATCH:  return @"PATCH";
+        case AOCHTTPMethodDELETE: return @"DELETE";
+        default:                  return @"GET";
     }
-    return self;
-}
-
-- (instancetype)initWithUrlPath:(NSString *)urlPath
-                     methodType:(AOCHTTPMethodType)methodType
-                    requestType:(AOCRequestSerializerType)requestType {
-    if (self = [super init]) {
-        self.urlPath = urlPath;
-        self.methodType = methodType;
-        self.requestType = requestType;
-        self.responseType = AOCResponseSerializerTypeJSON;
-    }
-    return self;
-}
-
-- (instancetype)initWithUrlPath:(NSString *)urlPath
-                     methodType:(AOCHTTPMethodType)methodType
-                    requestType:(AOCRequestSerializerType)requestType
-                   responseType:(AOCResponseSerializerType)responseType {
-    if (self = [super init]) {
-        self.urlPath = urlPath;
-        self.methodType = methodType;
-        self.requestType = requestType;
-        self.responseType = responseType;
-    }
-    return self;
 }
 
 @end

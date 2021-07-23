@@ -18,9 +18,4 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)routeController;
 @end
 
-
-@interface UIViewController (Router) <DPLTargetViewController>
-
-@end
-
 NS_ASSUME_NONNULL_END

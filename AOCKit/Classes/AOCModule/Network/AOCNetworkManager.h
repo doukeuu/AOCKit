@@ -12,9 +12,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// 成功回调
-typedef void (^SuccessBlock)(id _Nullable result);
+typedef void (^AOCSuccessBlock)(id _Nullable result);
 /// 失败回调
-typedef void (^FailureBlock)(NSDictionary<NSErrorUserInfoKey, id> *userInfo);
+typedef void (^AOCFailureBlock)(NSDictionary<NSErrorUserInfoKey, id> *userInfo);
 
 
 @interface AOCNetworkManager : NSObject
@@ -29,32 +29,32 @@ typedef void (^FailureBlock)(NSDictionary<NSErrorUserInfoKey, id> *userInfo);
 /// get请求
 + (void)GET:(AOCNetworkConfig *)config
       param:(nullable NSDictionary *)param
-    success:(nullable SuccessBlock)success
-    failure:(nullable FailureBlock)failure;
+    success:(nullable AOCSuccessBlock)success
+    failure:(nullable AOCFailureBlock)failure;
 
 /// post请求
 + (void)POST:(AOCNetworkConfig *)config
        param:(nullable NSDictionary *)param
-     success:(nullable SuccessBlock)success
-     failure:(nullable FailureBlock)failure;
+     success:(nullable AOCSuccessBlock)success
+     failure:(nullable AOCFailureBlock)failure;
 
 /// put请求
 + (void)PUT:(AOCNetworkConfig *)config
       param:(nullable NSDictionary *)param
-    success:(nullable SuccessBlock)success
-    failure:(nullable FailureBlock)failure;
+    success:(nullable AOCSuccessBlock)success
+    failure:(nullable AOCFailureBlock)failure;
 
 /// patch请求
 + (void)PATCH:(AOCNetworkConfig *)config
         param:(nullable NSDictionary *)param
-      success:(nullable SuccessBlock)success
-      failure:(nullable FailureBlock)failure;
+      success:(nullable AOCSuccessBlock)success
+      failure:(nullable AOCFailureBlock)failure;
 
 /// delete请求
 + (void)DELETE:(AOCNetworkConfig *)config
          param:(nullable NSDictionary *)param
-       success:(nullable SuccessBlock)success
-       failure:(nullable FailureBlock)failure;
+       success:(nullable AOCSuccessBlock)success
+       failure:(nullable AOCFailureBlock)failure;
 
 /// 网络请求方法
 /// @param config 请求设置
@@ -63,8 +63,8 @@ typedef void (^FailureBlock)(NSDictionary<NSErrorUserInfoKey, id> *userInfo);
 /// @param failure 失败回调
 - (nullable NSURLSessionDataTask *)taskWithConfig:(AOCNetworkConfig *)config
                                             param:(nullable NSDictionary *)param
-                                          success:(nullable SuccessBlock)success
-                                          failure:(nullable FailureBlock)failure;
+                                          success:(nullable AOCSuccessBlock)success
+                                          failure:(nullable AOCFailureBlock)failure;
 
 /// 上传文件POST网络请求
 /// @param config 请求config
@@ -76,8 +76,8 @@ typedef void (^FailureBlock)(NSDictionary<NSErrorUserInfoKey, id> *userInfo);
 + (void)UPLOAD:(AOCNetworkConfig *)config
          param:(nullable NSDictionary *)param
        content:(NSDictionary *)content
-       success:(nullable SuccessBlock)success
-       failure:(nullable FailureBlock)failure;
+       success:(nullable AOCSuccessBlock)success
+       failure:(nullable AOCFailureBlock)failure;
 @end
 
 NS_ASSUME_NONNULL_END

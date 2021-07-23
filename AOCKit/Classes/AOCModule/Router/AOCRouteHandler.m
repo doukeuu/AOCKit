@@ -75,13 +75,3 @@
 }
 
 @end
-
-
-
-@implementation UIViewController (Router)
-
-- (void)configureWithDeepLink:(DPLDeepLink *)deepLink {
-
-}
-
-@end

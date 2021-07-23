@@ -116,45 +116,44 @@
 #pragma mark - Request
 
 // get请求
-+ (void)GET:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(SuccessBlock)success failure:(FailureBlock)failure {
++ (void)GET:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
     config.methodType = AOCHTTPMethodGET;
     [[AOCNetworkManager shareManager] taskWithConfig:config param:param success:success failure:failure];
 }
 
 // post请求
-+ (void)POST:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(SuccessBlock)success failure:(FailureBlock)failure {
++ (void)POST:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
     config.methodType = AOCHTTPMethodPOST;
     [[AOCNetworkManager shareManager] taskWithConfig:config param:param success:success failure:failure];
 }
 
 // put请求
-+ (void)PUT:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(SuccessBlock)success failure:(FailureBlock)failure {
++ (void)PUT:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
     config.methodType = AOCHTTPMethodPUT;
     [[AOCNetworkManager shareManager] taskWithConfig:config param:param success:success failure:failure];
 }
 
 // patch请求
-+ (void)PATCH:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(SuccessBlock)success failure:(FailureBlock)failure {
++ (void)PATCH:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
     config.methodType = AOCHTTPMethodPATCH;
     [[AOCNetworkManager shareManager] taskWithConfig:config param:param success:success failure:failure];
 }
 
 // delete请求
-+ (void)DELETE:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(SuccessBlock)success failure:(FailureBlock)failure {
++ (void)DELETE:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
     config.methodType = AOCHTTPMethodDELETE;
     [[AOCNetworkManager shareManager] taskWithConfig:config param:param success:success failure:failure];
 }
 
 // 网络请求方法
-- (NSURLSessionDataTask *)taskWithConfig:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(SuccessBlock)success failure:(FailureBlock)failure {
+- (NSURLSessionDataTask *)taskWithConfig:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
     // 参数序列化方式
     [self configRequestSerializerType:config.requestType];
     // 响应序列化方式
     [self configResponseSerializerType:config.responseType];
     
     NSURLSessionDataTask *task;
-    NSString *method = [self methodNameWithType:config.methodType];
-    task = [self.afManager dataTaskWithHTTPMethod:method
+    task = [self.afManager dataTaskWithHTTPMethod:config.methodName
                                         URLString:config.urlPath
                                        parameters:param
                                           headers:config.headers
@@ -174,7 +173,7 @@
 }
 
 // 上传文件POST网络请求
-+ (void)UPLOAD:(AOCNetworkConfig *)config param:(NSDictionary *)param content:(NSDictionary *)content success:(SuccessBlock)success failure:(FailureBlock)failure {
++ (void)UPLOAD:(AOCNetworkConfig *)config param:(NSDictionary *)param content:(NSDictionary *)content success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
     
     AOCNetworkManager *manager = [AOCNetworkManager shareManager];
     // 参数序列化方式
@@ -200,17 +199,6 @@
 }
 
 #pragma mark - Before Request
-
-- (NSString *)methodNameWithType:(AOCHTTPMethodType)type {
-    switch (type) {
-        case AOCHTTPMethodGET:    return @"GET";
-        case AOCHTTPMethodPOST:   return @"POST";
-        case AOCHTTPMethodPUT:    return @"PUT";
-        case AOCHTTPMethodPATCH:  return @"PATCH";
-        case AOCHTTPMethodDELETE: return @"DELETE";
-        default:                  return @"GET";
-    }
-}
 
 // 参数序列化方式设置
 - (void)configRequestSerializerType:(AOCRequestSerializerType)type {
@@ -284,7 +272,7 @@
 #pragma mark - After Response
 
 // 处理成功返回结果
-- (void)handleSuccess:(id)responseObject task:(NSURLSessionDataTask *)task block:(SuccessBlock)block {
+- (void)handleSuccess:(id)responseObject task:(NSURLSessionDataTask *)task block:(AOCSuccessBlock)block {
     //  返回头中有token值，则缓存
     NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
     NSString *token = response.allHeaderFields[@"USER_TOKEN"];
@@ -318,7 +306,7 @@
     }
 }
 
-- (void)handleFailure:(NSError *)error task:(NSURLSessionDataTask *)task block:(FailureBlock)block {
+- (void)handleFailure:(NSError *)error task:(NSURLSessionDataTask *)task block:(AOCFailureBlock)block {
     NSLog(@"-- %@", error);
     if ([error.domain isEqualToString:NSURLErrorDomain] && error.code == -999) {
         return; // 网络请求被取消
@@ -332,7 +320,7 @@
     NSString *tips = [[NSString alloc] initWithData:errorData encoding:NSUTF8StringEncoding];
     
     if (statusCode == 401) {
-        NSString *string = tips ?: @"即将退出登陆";
+//        NSString *string = tips ?: @"即将退出登陆";
         tips = @"";
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5*NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //            [[NSNotificationCenter defaultCenter] postNotificationName:UUNetworkResponseStatusCode401 object:nil userInfo:@{UUNetworkErrorTips: string}];

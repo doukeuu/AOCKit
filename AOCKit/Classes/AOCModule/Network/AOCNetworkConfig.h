@@ -54,40 +54,18 @@ typedef NS_ENUM(NSInteger, AOCResponseSerializerType) {
 @property (nonatomic, assign) AOCRequestSerializerType requestType;
 /// 响应序列化类型，默认json
 @property (nonatomic, assign) AOCResponseSerializerType responseType;
-/// 请求头
+/// 网络请求头
 @property (nonatomic, strong) NSDictionary<NSString *, NSString *> *headers;
 
 /// 默认配置
-@property (nonatomic, strong, readonly, class) AOCNetworkConfig *defaultConfig;
++ (AOCNetworkConfig *)defaultConfig;
 
-/// 初始化配置
+/// 根据接口路径配置
 /// @param urlPath 接口路径
 - (instancetype)initWithUrlPath:(NSString *)urlPath;
 
-/// 初始化配置
-/// @param urlPath 接口路径
-/// @param methodType 请求方法类型
-- (instancetype)initWithUrlPath:(NSString *)urlPath
-                     methodType:(AOCHTTPMethodType)methodType;
-
-/// 初始化配置
-/// @param urlPath 接口路径
-/// @param methodType 请求方法类型
-/// @param requestType 请求序列化类型
-- (instancetype)initWithUrlPath:(NSString *)urlPath
-                     methodType:(AOCHTTPMethodType)methodType
-                    requestType:(AOCRequestSerializerType)requestType;
-
-/// 初始化配置
-/// @param urlPath 接口路径
-/// @param methodType 请求方法类型
-/// @param requestType 请求序列化类型
-/// @param responseType 响应序列化类型
-- (instancetype)initWithUrlPath:(NSString *)urlPath
-                     methodType:(AOCHTTPMethodType)methodType
-                    requestType:(AOCRequestSerializerType)requestType
-                   responseType:(AOCResponseSerializerType)responseType;
-
+/// 请求方法类型字符串
+- (NSString *)methodName;
 @end
 
 NS_ASSUME_NONNULL_END
