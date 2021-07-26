@@ -39,9 +39,6 @@
 
 // 初始化
 - (void)commonInitialize {
-    NSURL *url = [NSURL URLWithString:[apiUrlString copy]];
-    [self.afManager setValue:url forKey:@"_baseURL"];
-
     [self configureRequestSerializer];
     [self configureResponseSerializer];
     [self startNetworkReachabilityMonitoring];
@@ -104,46 +101,7 @@
     //AFNetworkingReachabilityDidChangeNotification
 }
 
-#pragma mark - Setter Configure
-
-// 设置网络请求baseURL
-+ (void)resetSessionManagerBaseURL:(NSString *)baseURLString {
-    if (!baseURLString) return;
-    NSURL *url = [NSURL URLWithString:baseURLString];
-    [[AOCNetworkManager shareManager].afManager setValue:url forKey:@"_baseURL"];
-}
-
 #pragma mark - Request
-
-// get请求
-+ (void)GET:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
-    config.methodType = AOCHTTPMethodGET;
-    [[AOCNetworkManager shareManager] taskWithConfig:config param:param success:success failure:failure];
-}
-
-// post请求
-+ (void)POST:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
-    config.methodType = AOCHTTPMethodPOST;
-    [[AOCNetworkManager shareManager] taskWithConfig:config param:param success:success failure:failure];
-}
-
-// put请求
-+ (void)PUT:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
-    config.methodType = AOCHTTPMethodPUT;
-    [[AOCNetworkManager shareManager] taskWithConfig:config param:param success:success failure:failure];
-}
-
-// patch请求
-+ (void)PATCH:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
-    config.methodType = AOCHTTPMethodPATCH;
-    [[AOCNetworkManager shareManager] taskWithConfig:config param:param success:success failure:failure];
-}
-
-// delete请求
-+ (void)DELETE:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
-    config.methodType = AOCHTTPMethodDELETE;
-    [[AOCNetworkManager shareManager] taskWithConfig:config param:param success:success failure:failure];
-}
 
 // 网络请求方法
 - (NSURLSessionDataTask *)taskWithConfig:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
@@ -161,41 +119,31 @@
         
     } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
         
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        [self handleSuccess:responseObject task:task block:success];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [self handleFailure:error task:task block:failure];
-    }];
+    } success:success failure:failure];
     [task resume];
     [self querySameRequest:task cancelNew:YES];
     return task;
 }
 
 // 上传文件POST网络请求
-+ (void)UPLOAD:(AOCNetworkConfig *)config param:(NSDictionary *)param content:(NSDictionary *)content success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
+- (void)UPLOAD:(AOCNetworkConfig *)config param:(NSDictionary *)param content:(NSDictionary *)content success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
     
-    AOCNetworkManager *manager = [AOCNetworkManager shareManager];
     // 参数序列化方式
-    [manager configRequestSerializerType:config.requestType];
+    [self configRequestSerializerType:config.requestType];
     // 响应序列化方式
-    [manager configResponseSerializerType:config.responseType];
+    [self configResponseSerializerType:config.responseType];
     
-    NSURLSessionTask *task = [manager.afManager POST:config.urlPath
+    NSURLSessionTask *task = [self.afManager POST:config.urlPath
                                           parameters:param
                                              headers:config.headers
                            constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        
         [self handleContent:content formData:formData];
         
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        [manager handleSuccess:responseObject task:task block:success];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [manager handleFailure:error task:task block:failure];
-    }];
-    [manager querySameRequest:task cancelNew:YES];
+    } success:success failure:failure];
+    [self querySameRequest:task cancelNew:YES];
 }
 
 #pragma mark - Before Request
@@ -223,7 +171,7 @@
 }
 
 // 处理上传文件的添加
-+ (void)handleContent:(NSDictionary *)content formData:(id<AFMultipartFormData>)formData {
+- (void)handleContent:(NSDictionary *)content formData:(id<AFMultipartFormData>)formData {
     if (!content || content.count == 0) return ;
 
     NSArray *array = content.allKeys;
@@ -267,73 +215,6 @@
             [formData appendPartWithFormData:value name:name];
         }
     }
-}
-
-#pragma mark - After Response
-
-// 处理成功返回结果
-- (void)handleSuccess:(id)responseObject task:(NSURLSessionDataTask *)task block:(AOCSuccessBlock)block {
-    //  返回头中有token值，则缓存
-    NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
-    NSString *token = response.allHeaderFields[@"USER_TOKEN"];
-    if (token.length == 0) return;
-    self.userToken = token;
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [[NSUserDefaults standardUserDefaults] setObject:token forKey:@"USER_TOKEN"];
-    });
-    
-    // 返回体中的信息处理
-    NSString *status = [responseObject objectForKey:@"status"];
-    if (status && [status isEqualToString:@"200"]) {
-        id data = [responseObject objectForKey:@"data"];
-        if (block) block(data);
-
-    } else {
-        id message = [responseObject objectForKey:@"message"];
-        if ([message isKindOfClass:[NSDictionary class]]) {
-            NSString *msg = [message valueForKey:@"msg"];
-            NSLog(@"Error 400 = %@", msg);
-        } else if ([message isKindOfClass:[NSString class]]) {
-            NSLog(@"Error 400 = %@", message);
-        } else {
-            NSLog(@"Error 400 = %@", message);
-        }
-        NSDictionary *errorInfo = @{NSDebugDescriptionErrorKey: @"返回 status != 200 错误"};
-        NSError *statusErr = [NSError errorWithDomain:NSURLErrorDomain
-                                                 code:NSURLErrorBadServerResponse
-                                             userInfo:errorInfo];
-        if (block) block(statusErr);
-    }
-}
-
-- (void)handleFailure:(NSError *)error task:(NSURLSessionDataTask *)task block:(AOCFailureBlock)block {
-    NSLog(@"-- %@", error);
-    if ([error.domain isEqualToString:NSURLErrorDomain] && error.code == -999) {
-        return; // 网络请求被取消
-    }
-    NSInteger statusCode = [(NSHTTPURLResponse *)task.response statusCode];
-    NSError *underlyingError = error;
-    if (error.userInfo[NSUnderlyingErrorKey]) {
-        underlyingError = error.userInfo[NSUnderlyingErrorKey];
-    }
-    NSData *errorData = underlyingError.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey];
-    NSString *tips = [[NSString alloc] initWithData:errorData encoding:NSUTF8StringEncoding];
-    
-    if (statusCode == 401) {
-//        NSString *string = tips ?: @"即将退出登陆";
-        tips = @"";
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5*NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//            [[NSNotificationCenter defaultCenter] postNotificationName:UUNetworkResponseStatusCode401 object:nil userInfo:@{UUNetworkErrorTips: string}];
-        });
-    } else if (statusCode == 404) {
-        tips = @"温馨提示：数据走丢了！";
-    } else {
-        tips = tips ?: @"未找到错误信息";
-    }
-    NSMutableDictionary *userInfo = [underlyingError.userInfo mutableCopy];
-//    [userInfo setObject:tips forKey:UUNetworkErrorTips];
-//    [userInfo setObject:@(statusCode) forKey:UUNetworkErrorCode];
-    if (block) block([userInfo copy]);
 }
 
 #pragma mark - Utility

@@ -9,7 +9,6 @@
 #define AOCModuleNetwork_h
 
 #import "AOCNetworkConfig.h"
-#import "AOCNetworkConstant.h"
 #import "AOCNetworkManager.h"
 
 #endif /* AOCModuleNetwork_h */

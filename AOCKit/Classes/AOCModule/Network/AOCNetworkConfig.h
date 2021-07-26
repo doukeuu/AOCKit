@@ -57,8 +57,6 @@ typedef NS_ENUM(NSInteger, AOCResponseSerializerType) {
 /// 网络请求头
 @property (nonatomic, strong) NSDictionary<NSString *, NSString *> *headers;
 
-/// 默认配置
-+ (AOCNetworkConfig *)defaultConfig;
 
 /// 根据接口路径配置
 /// @param urlPath 接口路径

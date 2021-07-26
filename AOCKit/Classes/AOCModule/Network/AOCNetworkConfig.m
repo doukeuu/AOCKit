@@ -6,24 +6,30 @@
 //
 
 #import "AOCNetworkConfig.h"
-#import "AOCNetworkConstant.h"
 
 @implementation AOCNetworkConfig
 
-// 默认配置
-+ (AOCNetworkConfig *)defaultConfig {
-    return [[AOCNetworkConfig alloc] initWithUrlPath:[apiUrlString copy]];
+- (instancetype)init {
+    if (self = [super init]) {
+        [self initialConfig];
+    }
+    return self;
 }
 
 // 根据接口路径配置
 - (instancetype)initWithUrlPath:(NSString *)urlPath {
     if (self = [super init]) {
         self.urlPath = urlPath;
-        self.methodType = AOCHTTPMethodGET;
-        self.requestType = AOCRequestSerializerTypeJSON;
-        self.responseType = AOCResponseSerializerTypeJSON;
+        [self initialConfig];
     }
     return self;
+}
+
+// 初始化属性
+- (void)initialConfig {
+    self.methodType = AOCHTTPMethodGET;
+    self.requestType = AOCRequestSerializerTypeJSON;
+    self.responseType = AOCResponseSerializerTypeJSON;
 }
 
 // 请求方法类型字符串
