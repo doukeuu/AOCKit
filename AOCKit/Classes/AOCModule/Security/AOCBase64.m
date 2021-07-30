@@ -1,13 +1,13 @@
 //
-//  AOCEncryptionBase.m
+//  AOCBase64.m
 //  AOCKit
 //
-//  Created by ssbm on 2021/7/27.
+//  Created by pan on 2021/7/30.
 //
 
-#import "AOCEncryptionBase.h"
+#import "AOCBase64.h"
 
-@implementation AOCEncryptionBase
+@implementation AOCBase64
 
 // base64编码NSData数据
 + (NSString *)base64EncodingData:(NSData *)data {

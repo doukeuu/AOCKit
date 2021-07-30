@@ -1,20 +1,16 @@
- //
-//  AOCEncryptionAES.m
+//
+//  AOCCryptor.m
 //  AOCKit
 //
-//  Created by ssbm on 2021/7/27.
+//  Created by pan on 2021/7/30.
 //
 
-#import "AOCEncryptionAES.h"
-//#import "GTMBase64.h"
+#import "AOCCryptor.h"
 #import <CommonCrypto/CommonCryptor.h>
-#import <CommonCrypto/CommonDigest.h>
 
-#define kEncryptionKey @"somethingForKey"
+#define kEncryptionDESKey @"somethingForKey"
 
-@implementation AOCEncryptionAES
-
-#pragma mark - AES
+@implementation AOCCryptor
 
 // 字符串AES加密，空字符串也加密
 + (NSString *)encryptionAESForString:(NSString *)parameter {
@@ -79,18 +75,16 @@
     return result;
 }
 
-#pragma mark - DES
-
 // 字符串Base64加密，空字符串也加密
 + (NSString *)encryptionDESForString:(NSString *)parameter {
     if (!parameter) return parameter;
-    return [AOCEncryptionAES encryptWithContent:parameter type:0 key:kEncryptionKey];
+    return [AOCCryptor encryptWithContent:parameter type:0 key:kEncryptionDESKey];
 }
 
 // 字符串Base64解密
 + (NSString *)decryptionDESForString:(NSString *)parameter {
     if (!parameter || parameter.length == 0) return parameter;
-    return [AOCEncryptionAES encryptWithContent:parameter type:1 key:kEncryptionKey];
+    return [AOCCryptor encryptWithContent:parameter type:1 key:kEncryptionDESKey];
 }
 
 + (NSString*)encryptWithContent:(NSString*)content type:(CCOperation)type key:(NSString*)aKey {
@@ -166,5 +160,6 @@ static const char* encryptWithKeyAndType(const char *text, CCOperation encryptOp
     
     return [result UTF8String];
 }
+
 
 @end

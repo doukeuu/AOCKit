@@ -1,15 +1,15 @@
 //
-//  AOCEncryptionBase.h
+//  AOCBase64.h
 //  AOCKit
 //
-//  Created by ssbm on 2021/7/27.
+//  Created by pan on 2021/7/30.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AOCEncryptionBase : NSObject
+@interface AOCBase64 : NSObject
 
 /// base64编码NSData数据
 + (NSString *)base64EncodingData:(NSData *)data;

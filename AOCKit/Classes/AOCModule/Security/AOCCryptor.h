@@ -1,15 +1,15 @@
 //
-//  AOCEncryptionAES.h
+//  AOCCryptor.h
 //  AOCKit
 //
-//  Created by ssbm on 2021/7/27.
+//  Created by pan on 2021/7/30.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AOCEncryptionAES : NSObject
+@interface AOCCryptor : NSObject
 
 /// 字符串AES加密，空字符串也加密
 + (NSString *)encryptionAESForString:(NSString *)parameter;
@@ -20,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)encryptionDESForString:(NSString *)parameter;
 // 字符串DES解密
 + (NSString *)decryptionDESForString:(NSString *)parameter;
-
 @end
 
 NS_ASSUME_NONNULL_END
