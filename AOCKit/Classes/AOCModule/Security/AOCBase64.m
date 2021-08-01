@@ -9,28 +9,47 @@
 
 @implementation AOCBase64
 
-// base64编码NSData数据
-+ (NSString *)base64EncodingData:(NSData *)data {
+#pragma mark - Encode
+
++ (NSData *)encodedDataWithEncodingData:(NSData *)data {
+    return [data base64EncodedDataWithOptions:0];
+}
+
++ (NSData *)encodedDataWithEncodingString:(NSString *)str {
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+    return [data base64EncodedDataWithOptions:0];
+}
+
++ (NSString *)encodedStringWithEncodingData:(NSData *)data {
     return [data base64EncodedStringWithOptions:0];
 }
 
-// base64解码NSData数据
-+ (NSString *)base64DecodingData:(NSData *)data {
++ (NSString *)encodedStringWithEncodingString:(NSString *)str {
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+    return [data base64EncodedStringWithOptions:0];
+}
+
+#pragma mark - Decode
+
++ (NSData *)decodedDataWithEncodedData:(NSData *)data {
+    return [[NSData alloc] initWithBase64EncodedData:data options:NSDataBase64DecodingIgnoreUnknownCharacters];
+}
+
++ (NSData *)decodedDataWithEncodedString:(NSString *)str {
+    return [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
+}
+
++ (NSString *)decodedStringWithEncodedData:(NSData *)data {
     NSData *decodedData = [[NSData alloc] initWithBase64EncodedData:data options:NSDataBase64DecodingIgnoreUnknownCharacters];
     return [[NSString alloc] initWithData:decodedData encoding:NSUTF8StringEncoding];
 }
 
-// base64编码字符串
-+ (NSString *)base64EncodingString:(NSString *)string {
-    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    return [data base64EncodedStringWithOptions:0];
++ (NSString *)decodedStringWithEncodedString:(NSString *)str {
+    NSData *decodedData = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    return [[NSString alloc] initWithData:decodedData encoding:NSUTF8StringEncoding];
 }
 
-// base64解码字符串
-+ (NSString *)base64DecodingString:(NSString *)string {
-    NSData *data = [[NSData alloc] initWithBase64EncodedString:string options:NSDataBase64DecodingIgnoreUnknownCharacters];
-    return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-}
+#pragma mark - Other
 
 // 异或加密，一次加密，再次解密
 + (NSString *)XOR:(NSString *)string {

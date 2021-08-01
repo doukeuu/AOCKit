@@ -11,17 +11,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AOCBase64 : NSObject
 
-/// base64编码NSData数据
-+ (NSString *)base64EncodingData:(NSData *)data;
+#pragma mark - Encode
 
-/// base64解码NSData数据
-+ (NSString *)base64DecodingData:(NSData *)data;
+/// 编码Data为Data
++ (NSData *)encodedDataWithEncodingData:(NSData *)data;
+/// 编码String为Data
++ (NSData *)encodedDataWithEncodingString:(NSString *)str;
+/// 编码Data为String
++ (NSString *)encodedStringWithEncodingData:(NSData *)data;
+/// 编码String为String
++ (NSString *)encodedStringWithEncodingString:(NSString *)str;
 
-/// base64编码字符串
-+ (NSString *)base64EncodingString:(NSString *)string;
+#pragma mark - Decode
 
-/// base64解码字符串
-+ (NSString *)base64DecodingString:(NSString *)string;
+/// 解码Data为Data
++ (NSData *)decodedDataWithEncodedData:(NSData *)data;
+/// 解码String为Data
++ (NSData *)decodedDataWithEncodedString:(NSString *)str;
+/// 解码Data为String
++ (NSString *)decodedStringWithEncodedData:(NSData *)data;
+/// 解码String为String
++ (NSString *)decodedStringWithEncodedString:(NSString *)str;
+
+#pragma mark - Other
 
 /// 异或加密，一次加密，再次解密
 + (NSString *)XOR:(NSString *)string;
