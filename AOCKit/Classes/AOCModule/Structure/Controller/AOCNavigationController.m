@@ -44,7 +44,7 @@
 // 配置导航栏
 - (void)configNavigationBar {
     // 背景设置为透明图片
-    UIImage *backImage = [UIImage imageFromColor:UIColor.clearColor];
+    UIImage *backImage = [UIImage imageWithColor:UIColor.clearColor];
     [self.navigationBar setShadowImage:backImage];
     [self.navigationBar setBackgroundImage:backImage forBarMetrics:UIBarMetricsDefault];
         

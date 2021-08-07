@@ -16,9 +16,15 @@ PODS:
     - AFNetworking/NSURLSession
   - AOCKit (0.1.0):
     - AFNetworking (= 4.0.1)
+    - Aspects (= 1.4.1)
+    - DeepLinkKit (= 1.5.1)
     - Masonry (= 1.1.0)
+    - MBProgressHUD (= 1.2.0)
     - MJExtension (= 3.2.4)
+  - Aspects (1.4.1)
+  - DeepLinkKit (1.5.1)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
   - MJExtension (3.2.4)
 
 DEPENDENCIES:
@@ -27,7 +33,10 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - Aspects
+    - DeepLinkKit
     - Masonry
+    - MBProgressHUD
     - MJExtension
 
 EXTERNAL SOURCES:
@@ -36,8 +45,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  AOCKit: b4e62fa0835183f98797e2e50bcadbbdb7241376
+  AOCKit: d1032ba5c1422c90afd2d86f8d99d49dd8aaee0b
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  DeepLinkKit: 9f300348cbb20ef8389a5018a57d8c9952b1831c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
 
 PODFILE CHECKSUM: 860a5eea15a3990ffb5b901c9e59deae01600ddf

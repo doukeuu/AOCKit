@@ -13,7 +13,6 @@
 #import "UIBarButtonItem+AOC.h"
 #import "UIButton+AOC.h"
 #import "UIImage+AOC.h"
-#import "UIImage+Kit.h"
 #import "UIView+AOC.h"
 
 #endif /* AOCUtilityCategory_h */

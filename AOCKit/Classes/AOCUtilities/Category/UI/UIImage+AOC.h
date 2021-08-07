@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (AOC)
 
 /// 生成纯色图片
-+ (UIImage *)imageFromColor:(UIColor *)color;
++ (UIImage *)imageWithColor:(UIColor *)color;
 
 /**
  绘制圆角矩形图片

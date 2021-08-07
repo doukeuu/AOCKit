@@ -22,6 +22,15 @@ typedef NS_ENUM(NSInteger, AOCButtonImageTitlePosition) {
 
 @interface UIButton (AOC)
 
+@property (nonatomic, strong) id normalImage;
+@property (nonatomic, strong) id normalBackgroundImage;
+@property (nonatomic, strong) id hightlightedImage;
+@property (nonatomic, strong) id hightlightedBackgroundImage;
+@property (nonatomic, strong) id selectedImage;
+@property (nonatomic, strong) id selectedBackgroundImage;
+@property (nonatomic, strong) id disabledImage;
+@property (nonatomic, strong) id disabledBackgroundImage;
+
 + (UIButton *)buttonWithBackColor:(UIColor *)color
                        titleColor:(UIColor *)color
                             title:(NSString *)title

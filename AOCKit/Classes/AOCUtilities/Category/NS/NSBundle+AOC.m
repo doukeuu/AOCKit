@@ -6,7 +6,7 @@
 //
 
 #import "NSBundle+AOC.h"
-#import "AOCNavigationController.h"
+#import "AOCDevice.h"
 
 @implementation NSBundle (AOC)
 
@@ -14,7 +14,7 @@
 + (instancetype)aocBundle {
     static NSBundle *aocBundle = nil;
     if (aocBundle == nil) {
-        NSBundle *bundle = [NSBundle bundleForClass:[AOCNavigationController class]];
+        NSBundle *bundle = [NSBundle bundleForClass:[AOCDevice class]];
         NSString *path = [bundle pathForResource:@"AOCImage" ofType:@"bundle"];
         aocBundle = [NSBundle bundleWithPath:path];
     }

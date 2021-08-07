@@ -7,8 +7,8 @@
 
 #import "AOCNetworkManager.h"
 #import "AOCDevice.h"
-#import "AFNetworking.h"
-#import "AFNetworkActivityIndicatorManager.h"
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 
 @interface AOCNetworkManager ()
 

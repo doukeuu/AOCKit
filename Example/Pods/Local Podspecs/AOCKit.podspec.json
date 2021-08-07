@@ -16,7 +16,7 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
   "source_files": "AOCKit/Classes/**/*",
   "resources": "AOCKit/Assets/AOCImage.bundle",
@@ -29,6 +29,15 @@
     ],
     "MJExtension": [
       "3.2.4"
+    ],
+    "DeepLinkKit": [
+      "1.5.1"
+    ],
+    "Aspects": [
+      "1.4.1"
+    ],
+    "MBProgressHUD": [
+      "1.2.0"
     ]
   }
 }

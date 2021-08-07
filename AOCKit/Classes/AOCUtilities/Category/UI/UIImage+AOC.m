@@ -10,7 +10,7 @@
 @implementation UIImage (AOC)
 
 // 生成纯色图片
-+ (UIImage *)imageFromColor:(UIColor *)color {
++ (UIImage *)imageWithColor:(UIColor *)color {
     if (!color) color = [UIColor whiteColor];
     CGRect rect = CGRectMake(0, 0, 1, 1);
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, [UIScreen mainScreen].scale);

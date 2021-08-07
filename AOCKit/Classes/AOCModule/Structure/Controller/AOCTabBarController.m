@@ -57,7 +57,7 @@
 // 配置TabBar
 - (void)configTabBar {
     // TabBar背景透明
-    UIImage *backImage = [UIImage imageFromColor:UIColor.clearColor];
+    UIImage *backImage = [UIImage imageWithColor:UIColor.clearColor];
     self.tabBar.backgroundImage = backImage;
     self.tabBar.shadowImage = backImage;
 }
