@@ -41,7 +41,7 @@
         ![presentingViewController isKindOfClass:[UINavigationController class]]) {
         
         targetViewController.modalPresentationStyle = UIModalPresentationOverFullScreen;
-        [presentingViewController presentViewController:targetViewController animated:NO completion:NULL];
+        [presentingViewController presentViewController:targetViewController animated:YES completion:NULL];
         
     } else if ([presentingViewController isKindOfClass:[UINavigationController class]]) {
         

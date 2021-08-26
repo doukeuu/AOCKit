@@ -46,7 +46,7 @@
                                  color:(UIColor *)color
                                 target:(id)target
                                 action:(SEL)action {
-    UIBarButtonItem *leftItem = [self itemWithTitle:title font:15 color:color target:target action:action];
+    UIBarButtonItem *leftItem = [self itemWithTitle:title font:16 color:color target:target action:action];
     UIButton *leftButton = leftItem.customView;
     leftButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     return leftItem;
@@ -57,7 +57,7 @@
                                   color:(UIColor *)color
                                  target:(id)target
                                  action:(SEL)action {
-    UIBarButtonItem *rightItem = [self itemWithTitle:title font:15 color:color target:target action:action];
+    UIBarButtonItem *rightItem = [self itemWithTitle:title font:16 color:color target:target action:action];
     UIButton *rightButton = rightItem.customView;
     rightButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
     return rightItem;
