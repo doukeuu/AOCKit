@@ -5,7 +5,7 @@
 //  Created by ssbm on 2021/6/9.
 //
 
-#import "AOCView.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, AOCAnimationType) {
     AOCAnimationScaleFromRightTop
 };
 
-@interface AOCAnimationView : AOCView
+@interface AOCAnimationView : UIView
 
 /// 自定义内容视图
 @property (nonatomic, strong) UIView *bezelView;

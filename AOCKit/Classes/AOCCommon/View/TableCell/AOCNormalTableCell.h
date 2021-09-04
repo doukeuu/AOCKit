@@ -5,11 +5,11 @@
 //  Created by ssbm on 2021/6/9.
 //
 
-#import "AOCTableViewCell.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AOCNormalTableCell : AOCTableViewCell
+@interface AOCNormalTableCell : UITableViewCell
 
 /// 容器视图
 @property (nonatomic, strong) UIView *containerView;

@@ -45,6 +45,20 @@
     return [self objectClassInArray];
 }
 
+/**
+ *  将模型转成字典
+ *  @return 字典
+ */
+- (NSMutableDictionary *)keyValues {
+    return [self mj_keyValues];
+}
+- (NSMutableDictionary *)keyValuesWithKeys:(NSArray *)keys {
+    return [self mj_keyValuesWithKeys:keys];
+}
+- (NSMutableDictionary *)keyValuesWithIgnoredKeys:(NSArray *)ignoredKeys {
+    return [self mj_keyValuesWithIgnoredKeys:ignoredKeys];
+}
+
 #pragma mark - Property Key
 
 // 获取所有的属性字段

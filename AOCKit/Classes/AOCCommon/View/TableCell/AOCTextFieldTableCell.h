@@ -5,13 +5,13 @@
 //  Created by ssbm on 2021/6/9.
 //
 
-#import "AOCTableViewCell.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol AOCTextFieldTableCellDelegate;
 
-@interface AOCTextFieldTableCell : AOCTableViewCell
+@interface AOCTextFieldTableCell : UITableViewCell
 
 /// 输入框
 @property (nonatomic, strong, readonly) UITextField *inputField;

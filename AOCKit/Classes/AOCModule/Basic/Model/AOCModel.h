@@ -25,6 +25,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 字典中的key是数组属性名，value是数组中存放模型的Class（Class类型或者NSString类型），子类重写
 + (NSDictionary *)objectClassInArray;
 
+/**
+ *  将模型转成字典
+ *  @return 字典
+ */
+- (NSMutableDictionary *)keyValues;
+- (NSMutableDictionary *)keyValuesWithKeys:(NSArray *)keys;
+- (NSMutableDictionary *)keyValuesWithIgnoredKeys:(NSArray *)ignoredKeys;
+
 #pragma mark - Property Key
 
 /// 获取所有的属性字段
