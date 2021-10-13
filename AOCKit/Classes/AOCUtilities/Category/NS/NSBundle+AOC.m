@@ -21,4 +21,21 @@
     return aocBundle;
 }
 
+// URL scheme
++ (NSString *)appScheme {
+    NSDictionary *dict = [[NSBundle mainBundle] infoDictionary];
+    NSArray *urlTypes = dict[@"CFBundleURLTypes"];
+    NSDictionary *firstTypeInfo = urlTypes.firstObject;
+    NSArray *schemes = firstTypeInfo[@"CFBundleURLSchemes"];
+    return schemes.firstObject;
+}
+
+// URL identifier
++ (NSString *)appIdentifier {
+    NSDictionary *dict = [[NSBundle mainBundle] infoDictionary];
+    NSArray *urlTypes = dict[@"CFBundleURLTypes"];
+    NSDictionary *firstTypeInfo = urlTypes.firstObject;
+    return firstTypeInfo[@"CFBundleURLName"];
+}
+
 @end

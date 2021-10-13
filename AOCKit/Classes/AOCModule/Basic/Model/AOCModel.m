@@ -35,6 +35,16 @@
     return @{};
 }
 
+// 只有这个数组中的属性名才允许进行字典和模型的转换
++ (NSArray *)allowedPropertyNames {
+    return @[];
+}
+
+// 这个数组中的属性名将会被忽略：不进行字典和模型的转换
++ (NSArray *)ignoredPropertyNames {
+    return @[];
+}
+
 // 实现MJKeyValue协议方法
 + (NSDictionary *)mj_replacedKeyFromPropertyName {
     return [self replacedKeyFromPropertyName];
@@ -43,6 +53,16 @@
 // 实现MJKeyValue协议方法
 + (NSDictionary *)mj_objectClassInArray {
     return [self objectClassInArray];
+}
+
+// 实现MJKeyValue协议方法
++ (NSArray *)mj_allowedPropertyNames {
+    return [self allowedPropertyNames];
+}
+
+// 实现MJKeyValue协议方法
++ (NSArray *)mj_ignoredPropertyNames {
+    return [self ignoredPropertyNames];
 }
 
 /**

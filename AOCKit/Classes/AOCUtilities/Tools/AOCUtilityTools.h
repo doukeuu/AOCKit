@@ -9,5 +9,7 @@
 #define AOCUtilityTools_h
 
 #import "AOCDevice.h"
+#import "AOCToolsNS.h"
+#import "AOCToolsUI.h"
 
 #endif /* AOCUtilityTools_h */

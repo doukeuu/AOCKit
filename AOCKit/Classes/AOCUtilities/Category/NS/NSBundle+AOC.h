@@ -13,6 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 当前bundle文件
 + (instancetype)aocBundle;
+
+/// URL scheme
++ (NSString *)appScheme;
+
+/// URL identifier
++ (NSString *)appIdentifier;
+
 @end
 
 NS_ASSUME_NONNULL_END

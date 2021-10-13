@@ -25,6 +25,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 字典中的key是数组属性名，value是数组中存放模型的Class（Class类型或者NSString类型），子类重写
 + (NSDictionary *)objectClassInArray;
 
+/// 只有这个数组中的属性名才允许进行字典和模型的转换
++ (NSArray *)allowedPropertyNames;
+
+/// 这个数组中的属性名将会被忽略：不进行字典和模型的转换
++ (NSArray *)ignoredPropertyNames;
+
 /**
  *  将模型转成字典
  *  @return 字典
