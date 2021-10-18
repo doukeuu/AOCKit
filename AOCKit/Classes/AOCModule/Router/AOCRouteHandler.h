@@ -5,7 +5,7 @@
 //  Created by pan on 2021/7/13.
 //
 
-#import <DeepLinkKit/DPLRouteHandler.h>
+#import <DeepLinkKit/DeepLinkKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,8 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 路由路径
 + (NSString *)routerPath;
 
-/// 路由目标控制器名称
-+ (NSString *)routeController;
+/// 路由目标控制器类
++ (Class)routeController;
 @end
 
 NS_ASSUME_NONNULL_END

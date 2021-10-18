@@ -9,22 +9,28 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// 路由处理完成回调
+#define kRouteCallbackURL  @"dpl_callback_url"
+
+/// 路由跳转处理完成回调
 typedef void(^AOCRouteCompletionBlock)(BOOL handled, NSError * _Nullable error);
 
 
-@interface AOCRouterManager : NSObject
 
-/// 路由处理类数组
-@property (nonatomic, strong, class, readonly) NSMutableArray<NSString *> *handlerArray;
+@interface AOCRouterManager : NSObject
 
 /// 单例
 + (instancetype)sharedManager;
 
 /// 用于App内部直通过路径接跳转
-/// @param path 路由路径
-/// @param completion 完成回调
-+ (void)handleRoutePath:(NSString *)path completion:(nullable AOCRouteCompletionBlock)completion;
+/// @param handlerClass 路由处理类
+/// @param completion 跳转完成后回调
++ (void)handleRoute:(Class)handlerClass completion:(nullable AOCRouteCompletionBlock)completion;
+
+/// 用于App内部直通过路径接跳转
+/// @param handlerClass 路由处理类
+/// @param parameters 路径传参
+/// @param completion 跳转完成后回调
++ (void)handleRoute:(Class)handlerClass queryParameters:(NSDictionary *)parameters completion:(nullable AOCRouteCompletionBlock)completion;
 @end
 
 NS_ASSUME_NONNULL_END

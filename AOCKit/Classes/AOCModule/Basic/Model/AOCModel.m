@@ -121,6 +121,10 @@
     return YES;
 }
 
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {}
+
+- (void)setNilValueForKey:(NSString *)key {}
+
 #pragma mark - Encoding
 
 MJExtensionCodingImplementation

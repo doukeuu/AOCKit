@@ -18,8 +18,6 @@
 
 @implementation AOCRouterManager
 
-static NSMutableArray *_handlerArray; // 路由处理类数组
-
 #pragma mark - initial
 
 + (void)load {
@@ -37,15 +35,38 @@ static NSMutableArray *_handlerArray; // 路由处理类数组
     return manager;
 }
 
-#pragma mark - Property
-
-+ (NSMutableArray<NSString *> *)handlerArray {
-    if (!_handlerArray) {
-        _handlerArray = [NSMutableArray array];
-    }
-    return _handlerArray;
++ (void)handleRoute:(Class)handlerClass completion:(AOCRouteCompletionBlock)completion {
+    [self handleRoute:handlerClass queryParameters:@{} completion:completion];
 }
 
++ (void)handleRoute:(Class)handlerClass queryParameters:(NSDictionary *)parameters completion:(AOCRouteCompletionBlock)completion {
+    if (![handlerClass isSubclassOfClass:[AOCRouteHandler class]]) {
+        if (completion) {
+            NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"路由处理类错误"};
+            completion(NO, [NSError errorWithDomain:DPLErrorDomain code:DPLRouteNotFoundError userInfo:userInfo]);
+        }
+        return;
+    }
+    NSString *path = [handlerClass routerPath];
+    if (path.length == 0) {
+        if (completion) {
+            NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"路由路径不能为空"};
+            completion(NO, [NSError errorWithDomain:DPLErrorDomain code:DPLRouteNotFoundError userInfo:userInfo]);
+        }
+        return;
+    }
+    DPLMutableDeepLink *deepLink = [[DPLMutableDeepLink alloc] initWithString:path];
+    if (parameters != nil && parameters.count > 0) {
+        [parameters enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+            deepLink[key] = obj;
+        }];
+    }
+    [self handleRouteURL:deepLink.URL completion:completion];
+}
+
+#pragma mark - Property
+
+// 路由
 - (DPLDeepLinkRouter *)router {
     if (!_router) {
         _router = [[DPLDeepLinkRouter alloc] init];
@@ -55,8 +76,14 @@ static NSMutableArray *_handlerArray; // 路由处理类数组
 
 #pragma mark - Hook AppDelegate
 
+// AppDelegate类名
++ (Class)appDelegateClass {
+    return NSClassFromString(@"AppDelegate");
+}
+
+// 检测是否存在AppDelegate方法
 + (void)routerCheckAppDelegateMethod {
-    Class cls = NSClassFromString(@"AppDelegate");
+    Class cls = [self appDelegateClass];
 
     SEL cmd1 = @selector(application:openURL:options:);
     SEL cmd2 = @selector(application:continueUserActivity:restorationHandler:);
@@ -75,8 +102,9 @@ static NSMutableArray *_handlerArray; // 路由处理类数组
     }
 }
 
+// 替换AppDelegate方法
 + (void)routerHookAppDelegateMethod {
-    Class appDelegateCls = NSClassFromString(@"AppDelegate");
+    Class appDelegateCls = [self appDelegateClass];
     
     [appDelegateCls
      aspect_hookSelector:@selector(application:didFinishLaunchingWithOptions:)
@@ -110,19 +138,23 @@ static NSMutableArray *_handlerArray; // 路由处理类数组
 
 #pragma mark - Router Register
 
+// 注册路径
 + (void)routerRegistration {
-    NSArray *handlerArray = AOCRouterManager.handlerArray;
-    for (NSString *handlerName in handlerArray) {
-        if (handlerName.length == 0) continue;
-        
-        Class handlerClass = NSClassFromString(handlerName);
-        if (handlerClass == nil) continue;
-        if (![handlerClass isSubclassOfClass:[AOCRouteHandler class]]) continue;
-        
-        NSString *route = [handlerClass routerPath];
-        if (route.length == 0) continue;
-        
-        [AOCRouterManager sharedManager].router[route] = handlerClass;
+    unsigned int count;
+    const char **classes;
+    
+    Class appDelegateCls = [self appDelegateClass];
+    const char *image = class_getImageName(appDelegateCls);
+    classes = objc_copyClassNamesForImage(image, &count);
+
+    for (int i = 0; i < count; i ++) {
+        NSString *className = [NSString stringWithCString:classes[i] encoding:NSUTF8StringEncoding];
+        Class class = NSClassFromString(className);
+        if ([class isSubclassOfClass:[AOCRouteHandler class]]) {
+            NSString *route = [class routerPath];
+            if (route.length == 0) continue;
+            [AOCRouterManager sharedManager].router[route] = class;
+        }
     }
 }
 
@@ -132,11 +164,6 @@ static NSMutableArray *_handlerArray; // 路由处理类数组
 
 + (void)handleRouteActivity:(NSUserActivity *)userActivity completion:(AOCRouteCompletionBlock)completion {
     [[AOCRouterManager sharedManager].router handleUserActivity:userActivity withCompletion:completion];
-}
-
-+ (void)handleRoutePath:(NSString *)path completion:(AOCRouteCompletionBlock)completion {
-    NSURL *url = [NSURL URLWithString:path];
-    [self handleRouteURL:url completion:completion];
 }
 
 @end

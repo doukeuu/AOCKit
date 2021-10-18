@@ -14,19 +14,15 @@
     return nil;
 }
 
-// 路由目标控制器名称
-+ (NSString *)routeController {
+// 路由目标控制器类
++ (Class)routeController {
     return nil;
 }
 
 - (UIViewController <DPLTargetViewController> *)targetViewController {
-    NSString *controllerName = [[self class] routeController];
-    if (controllerName.length == 0) return nil;
-    
-    Class controllerClass = NSClassFromString(controllerName);
+    Class controllerClass = [[self class] routeController];
     if (controllerClass == nil) return nil;
     if (![controllerClass isSubclassOfClass:[UIViewController class]]) return nil;
-    
     return [[controllerClass alloc] init];
 }
 
@@ -48,7 +44,6 @@
         UINavigationController *nav = (UINavigationController *)presentingViewController;
         [self navigationController:nav placeTargetViewController:targetViewController];
     }
-    
 }
 
 - (void)navigationController:(UINavigationController *)nav placeTargetViewController:(UIViewController *)target {

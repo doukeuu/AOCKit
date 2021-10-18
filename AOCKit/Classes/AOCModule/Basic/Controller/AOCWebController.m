@@ -88,8 +88,13 @@
     if (self.request != nil) {
         [self.webView loadRequest:self.request];
     } else if (self.htmlString != nil) {
-        WKUserScript *userScript = [[WKUserScript alloc] initWithSource:AOCJSInjectedFormat injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
-        [self.webView.configuration.userContentController addUserScript:userScript];
+        NSArray *jsArray = @[AOCMetaJSInjectedFormat, AOCImgJSInjectedFormat, AOCSpanJSInjectedFormat];
+        for (NSString *js in jsArray) {
+            WKUserScript *metaScript = [[WKUserScript alloc] initWithSource:js
+                                                              injectionTime:WKUserScriptInjectionTimeAtDocumentEnd
+                                                           forMainFrameOnly:YES];
+            [self.webView.configuration.userContentController addUserScript:metaScript];
+        }
         [self.webView loadHTMLString:self.htmlString baseURL:nil];
     }
 }
