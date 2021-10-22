@@ -32,6 +32,7 @@
     [color setFill];
     CGContextDrawPath(context, kCGPathFill);
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    CGPathRelease(path);
     UIGraphicsEndImageContext();
     return image;
 }

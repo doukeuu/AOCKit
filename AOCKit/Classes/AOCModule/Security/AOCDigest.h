@@ -12,13 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AOCDigest : NSObject
 
 /// 字符串MD5值
-+ (NSString *)MD5:(NSString *)str;
++ (nullable NSString *)MD5:(NSString *)str;
 
 /// 字符串MD4值
-+ (NSString *)MD4:(NSString *)str;
++ (nullable NSString *)MD4:(NSString *)str;
 
 /// 字符串MD2值
-+ (NSString *)MD2:(NSString *)str;
++ (nullable NSString *)MD2:(NSString *)str;
 
 
 /// 数据MD5值
@@ -32,19 +32,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /// 字符串SHA1值
-+ (NSString *)SHA1:(NSString *)str;
++ (nullable NSString *)SHA1:(NSString *)str;
 
 /// 字符串SHA224值
-+ (NSString *)SHA224:(NSString *)str;
++ (nullable NSString *)SHA224:(NSString *)str;
 
 /// 字符串SHA256值
-+ (NSString *)SHA256:(NSString *)str;
++ (nullable NSString *)SHA256:(NSString *)str;
 
 /// 字符串SHA384值
-+ (NSString *)SHA384:(NSString *)str;
++ (nullable NSString *)SHA384:(NSString *)str;
 
 /// 字符串SHA512值
-+ (NSString *)SHA512:(NSString *)str;
++ (nullable NSString *)SHA512:(NSString *)str;
 
 
 /// 数据SHA1值

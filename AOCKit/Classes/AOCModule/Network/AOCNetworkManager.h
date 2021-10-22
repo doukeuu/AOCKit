@@ -39,11 +39,11 @@ typedef void (^AOCFailureBlock)(NSURLSessionDataTask * _Nullable task, NSError *
 /// key不作为name时，value可以为数组，数组内容可以为image/data/filePath其中的一类
 /// @param success 成功回调
 /// @param failure 失败回调
-- (void)UPLOAD:(AOCNetworkConfig *)config
-         param:(nullable NSDictionary *)param
-       content:(NSDictionary *)content
-       success:(nullable AOCSuccessBlock)success
-       failure:(nullable AOCFailureBlock)failure;
+- (nullable NSURLSessionDataTask *)uploadWithConfig:(AOCNetworkConfig *)config
+                                              param:(nullable NSDictionary *)param
+                                            content:(NSDictionary *)content
+                                            success:(nullable AOCSuccessBlock)success
+                                            failure:(nullable AOCFailureBlock)failure;
 @end
 
 NS_ASSUME_NONNULL_END

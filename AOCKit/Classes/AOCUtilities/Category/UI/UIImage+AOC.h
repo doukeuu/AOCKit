@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param radius 圆角半径
  @return 圆角矩形图片
  */
-+ (UIImage *)roundedRect:(CGRect)rect fillColor:(UIColor *)color cornerRadius:(CGFloat)radius;
++ (nullable UIImage *)roundedRect:(CGRect)rect fillColor:(UIColor *)color cornerRadius:(CGFloat)radius;
 
 /// 绘制渐变色图片
 /// @param size 尺寸大小

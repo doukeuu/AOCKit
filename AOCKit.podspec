@@ -43,7 +43,6 @@ Pod::Spec.new do |s|
   
   s.dependency 'AFNetworking',  '4.0.1'
   s.dependency 'Masonry',       '1.1.0'
-  s.dependency 'MJExtension',   '3.2.4'
   s.dependency 'DeepLinkKit',   '1.5.1'
   s.dependency 'Aspects',       '1.4.1'
   s.dependency 'MBProgressHUD', '1.2.0'

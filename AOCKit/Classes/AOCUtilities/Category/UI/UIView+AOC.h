@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) CGFloat centerY;
 
 /// 获取视图控制器，可能为nil
-- (UIViewController *)viewController;
+- (nullable UIViewController *)viewController;
 /// 截图
 - (UIImage *)screenShot;
 @end

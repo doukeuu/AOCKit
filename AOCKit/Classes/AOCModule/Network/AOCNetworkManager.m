@@ -104,7 +104,10 @@
 #pragma mark - Request
 
 // 网络请求方法
-- (NSURLSessionDataTask *)taskWithConfig:(AOCNetworkConfig *)config param:(NSDictionary *)param success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
+- (NSURLSessionDataTask *)taskWithConfig:(AOCNetworkConfig *)config
+                                   param:(NSDictionary *)param
+                                 success:(AOCSuccessBlock)success
+                                 failure:(AOCFailureBlock)failure {
     // 参数序列化方式
     [self configRequestSerializerType:config.requestType];
     // 响应序列化方式
@@ -126,17 +129,21 @@
 }
 
 // 上传文件POST网络请求
-- (void)UPLOAD:(AOCNetworkConfig *)config param:(NSDictionary *)param content:(NSDictionary *)content success:(AOCSuccessBlock)success failure:(AOCFailureBlock)failure {
+- (NSURLSessionDataTask *)uploadWithConfig:(AOCNetworkConfig *)config
+                                     param:(NSDictionary *)param
+                                   content:(NSDictionary *)content
+                                   success:(AOCSuccessBlock)success
+                                   failure:(AOCFailureBlock)failure {
     
     // 参数序列化方式
     [self configRequestSerializerType:config.requestType];
     // 响应序列化方式
     [self configResponseSerializerType:config.responseType];
     
-    NSURLSessionTask *task = [self.afManager POST:config.urlPath
-                                          parameters:param
-                                             headers:config.headers
-                           constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    NSURLSessionDataTask *task = [self.afManager POST:config.urlPath
+                                           parameters:param
+                                              headers:config.headers
+                            constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         
         [self handleContent:content formData:formData];
         
@@ -144,6 +151,7 @@
         
     } success:success failure:failure];
     [self querySameRequest:task cancelNew:YES];
+    return task;
 }
 
 #pragma mark - Before Request

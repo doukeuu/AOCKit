@@ -27,13 +27,13 @@ typedef void(^DatePickerBlock)(NSInteger year, NSInteger month, NSInteger day);
 /// 日期类型
 @property (nonatomic, assign) AOCDatePickerType pickerType;
 /// 最小日期
-@property (nonatomic, strong) NSDate *minimumDate;
+@property (nonatomic, strong, nullable) NSDate *minimumDate;
 /// 最大日期
-@property (nonatomic, strong) NSDate *maximumDate;
+@property (nonatomic, strong, nullable) NSDate *maximumDate;
 /// 含有全部
 @property (nonatomic, assign) BOOL includeTotal;
 /// 选择回调
-@property (nonatomic, copy) DatePickerBlock block;
+@property (nonatomic, copy, nullable) DatePickerBlock block;
 
 /// 展示日期选择视图
 /// @param type 日期类型

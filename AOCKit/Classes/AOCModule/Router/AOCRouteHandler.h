@@ -12,10 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AOCRouteHandler : DPLRouteHandler
 
 /// 路由路径
-+ (NSString *)routerPath;
++ (nullable NSString *)routerPath;
 
 /// 路由目标控制器类
-+ (Class)routeController;
++ (nullable Class)routeController;
 @end
 
 NS_ASSUME_NONNULL_END
