@@ -149,22 +149,11 @@
 
 // 重新设置 image 及 title 的位置及间距
 - (void)resetImageTitlePosition:(AOCButtonImageTitlePosition)position space:(CGFloat)space {
-    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
-    CGFloat imageWith = self.imageView.frame.size.width;
-    CGFloat imageHeight = self.imageView.frame.size.height;
-    CGFloat titleWidth = 0.0;
-    CGFloat titleHeight = 0.0;
-    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0) {
-        // 由于iOS8中titleLabel的size为0，用下面的这种设置
-        titleWidth = self.titleLabel.intrinsicContentSize.width;
-        titleHeight = self.titleLabel.intrinsicContentSize.height;
-    } else {
-        titleWidth = self.titleLabel.frame.size.width;
-        titleHeight = self.titleLabel.frame.size.height;
-    }
-    if (titleWidth > (screenWidth - 80)/2) {
-//        titleWidth = (screenWidth - 80)/2;
-    }
+    CGFloat imageWith = self.imageView.intrinsicContentSize.width;
+    CGFloat imageHeight = self.imageView.intrinsicContentSize.height;
+    CGFloat titleWidth = self.titleLabel.intrinsicContentSize.width;
+    CGFloat titleHeight = self.titleLabel.intrinsicContentSize.height;
+    
     switch (position) {
         case AOCButtonImageTopTitleDown: {
             self.imageEdgeInsets = UIEdgeInsetsMake(-titleHeight-space, 0, 0, -titleWidth);
