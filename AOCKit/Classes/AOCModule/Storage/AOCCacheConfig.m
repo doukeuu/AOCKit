@@ -1,21 +1,21 @@
 //
-//  AOCFileConfig.m
+//  AOCCacheConfig.m
 //  AOCKit
 //
-//  Created by pan on 2021/9/25.
+//  Created by pan on 2021/12/2.
 //
 
-#import "AOCFileConfig.h"
+#import "AOCCacheConfig.h"
 
-static const NSInteger kAOCFileConfigMaxDiskAge = 60 * 60 * 24 * 7; // 1 week
+static const NSInteger kAOCCacheConfigMaxDiskAge = 60 * 60 * 24 * 7; // 1 week
 
-@implementation AOCFileConfig
+@implementation AOCCacheConfig
 
-+ (AOCFileConfig *)defaultConfig {
++ (AOCCacheConfig *)defaultConfig {
     static dispatch_once_t onceToken;
-    static AOCFileConfig *_defaultConfig;
+    static AOCCacheConfig *_defaultConfig;
     dispatch_once(&onceToken, ^{
-        _defaultConfig = [AOCFileConfig new];
+        _defaultConfig = [AOCCacheConfig new];
     });
     return _defaultConfig;
 }
@@ -26,15 +26,15 @@ static const NSInteger kAOCFileConfigMaxDiskAge = 60 * 60 * 24 * 7; // 1 week
         _shouldRemoveExpiredDataWhenEnterBackground = YES;
         _diskCacheReadingOptions = 0;
         _diskCacheWritingOptions = NSDataWritingAtomic;
-        _maxDiskAge = kAOCFileConfigMaxDiskAge;
+        _maxDiskAge = kAOCCacheConfigMaxDiskAge;
         _maxDiskSize = 0;
-        _diskCacheExpireType = AOCFileConfigExpireTypeModificationDate;
+        _diskCacheExpireType = AOCCacheConfigExpireTypeModificationDate;
     }
     return self;
 }
 
 - (id)copyWithZone:(NSZone *)zone {
-    AOCFileConfig *config = [[[self class] allocWithZone:zone] init];
+    AOCCacheConfig *config = [[[self class] allocWithZone:zone] init];
     config.shouldDisableiCloud = self.shouldDisableiCloud;
     config.shouldRemoveExpiredDataWhenEnterBackground = self.shouldRemoveExpiredDataWhenEnterBackground;
     config.diskCacheReadingOptions = self.diskCacheReadingOptions;
@@ -45,5 +45,6 @@ static const NSInteger kAOCFileConfigMaxDiskAge = 60 * 60 * 24 * 7; // 1 week
     config.fileManager = self.fileManager; // NSFileManager does not conform to NSCopying, just pass the reference
     return config;
 }
+
 
 @end

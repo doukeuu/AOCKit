@@ -1,8 +1,8 @@
 //
-//  AOCFileConfig.h
+//  AOCCacheConfig.h
 //  AOCKit
 //
-//  Created by pan on 2021/9/25.
+//  Created by pan on 2021/12/2.
 //
 
 #import <Foundation/Foundation.h>
@@ -10,32 +10,32 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// Image Cache Expire Type
-typedef NS_ENUM(NSUInteger, AOCFileConfigExpireType) {
+typedef NS_ENUM(NSUInteger, AOCCacheConfigExpireType) {
     /**
      * When the image cache is accessed it will update this value
      */
-    AOCFileConfigExpireTypeAccessDate,
+    AOCCacheConfigExpireTypeAccessDate,
     /**
      * When the image cache is created or modified it will update this value (Default)
      */
-    AOCFileConfigExpireTypeModificationDate,
+    AOCCacheConfigExpireTypeModificationDate,
     /**
      * When the image cache is created it will update this value
      */
-    AOCFileConfigExpireTypeCreationDate,
+    AOCCacheConfigExpireTypeCreationDate,
     /**
      * When the image cache is created, modified, renamed, file attribute updated (like permission, xattr)  it will update this value
      */
-    AOCFileConfigExpireTypeChangeDate,
+    AOCCacheConfigExpireTypeChangeDate,
 };
 
-@interface AOCFileConfig : NSObject <NSCopying>
+@interface AOCCacheConfig : NSObject <NSCopying>
 
 /**
  Gets the default cache config used for shared instance or initialization when it does not provide any cache config. Such as `AOCFile.sharedImageCache`.
  @note You can modify the property on default cache config, which can be used for later created cache instance. The already created cache instance does not get affected.
  */
-@property (nonatomic, class, readonly, nonnull) AOCFileConfig *defaultConfig;
+@property (nonatomic, class, readonly, nonnull) AOCCacheConfig *defaultConfig;
 
 /**
  * Whether or not to disable iCloud backup
@@ -80,7 +80,7 @@ typedef NS_ENUM(NSUInteger, AOCFileConfigExpireType) {
  * The attribute which the clear cache will be checked against when clearing the disk cache
  * Default is Modified Date
  */
-@property (assign, nonatomic) AOCFileConfigExpireType diskCacheExpireType;
+@property (assign, nonatomic) AOCCacheConfigExpireType diskCacheExpireType;
 
 /**
  * The custom file manager for disk cache. Pass nil to let disk cache choose the proper file manager.
